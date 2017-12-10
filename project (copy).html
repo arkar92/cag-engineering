@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html>
+<title>CAG Engineering | Projects</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link href="https://fonts.googleapis.com/css?family=Encode+Sans+Expanded:500" rel="stylesheet"> 
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<!-- favicon insert -->
+<link rel="apple-touch-icon" sizes="180x180" href="img/favicons/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="img/favicons/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="img/favicons/favicon-16x16.png">
+<link rel="manifest" href="img/favicons/manifest.json">
+<link rel="mask-icon" href="img/favicons/safari-pinned-tab.svg" color="#5bbad5">
+<meta name="theme-color" content="#ffffff">
+
+
+
+<style>
+    *,h1,p{
+        font-family: 'Encode Sans Expanded', sans-serif;
+    }
+    .fa-anchor,.fa-coffee {font-size:200px}
+    .material-icons {
+      vertical-align:-14%; 
+      font-size: 25px;
+      }
+
+    input[type="radio"] {
+        /* display: none; */
+    }
+
+    input[type="radio"].toggle:checked + label {
+        /* Do something special with the selected state */
+    }
+
+      .container {
+        overflow: hidden;
+    }
+
+    .filterDiv {
+        float: left;
+        background-color: #2196F3;
+        color: #ffffff;
+        width: 100px;
+        line-height: 100px;
+        text-align: center;
+        margin: 2px;
+        display: none; /* Hidden by default */
+    }
+
+    /* The "show" class is added to the filtered elements */
+    .show {
+        display: block;
+    }
+
+</style>
+
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar w3-white w3-wide w3-padding w3-card-2">
+    <a href="#home" class="w3-bar-item w3-button"><b>CAG</b> Engineering</a>
+    <!-- Float links to the right. Hide them on small screens -->
+    <div class="w3-right w3-hide-small">
+            <a href="#projects" class="w3-bar-item w3-button">Home</a>
+            <a href="#projects" class="w3-bar-item w3-button">Services</a>
+            <a href="#projects" class="w3-bar-item w3-button">Products</a>
+      <a href="#projects" class="w3-bar-item w3-button w3-green">Projects</a>
+      <a href="#about" class="w3-bar-item w3-button">About</a>
+      <a href="#contact" class="w3-bar-item w3-button">Contact</a>
+    </div>
+  </div>
+</div>
+
+<!-- Header -->
+<header class="w3-display-container w3-content w3-wide" style="max-width:1500px;"  id="home">
+  <img class="w3-image" src="img/cover/about_us_2_min.jpg" alt="Architecture" width="1500" height="800">
+  <div class="w3-display-middle w3-margin-top w3-center">
+    <h1 class="w3-jumbo"><span class="w3-padding w3-black w3-text-green w3-opacity-min"><b>Projects</b></span></h1>
+  </div>
+  <div class="w3-display-bottommiddle w3-container w3-padding">
+    <p style="text-shadow:1px 1px 0 #444" class="w3-text-white w3-large">
+        <a href="#">Home</a> / 
+        <a href="#">Projects</a>
+    </p>
+  </div>
+</header>
+
+<!-- Testing W3 Tab -->
+
+<div class="w3-container">
+        <h2>Tabs in a Grid</h2>
+
+        <select class="w3-select" onchange="openCity()" name="option">
+            <option value="" disabled selected>Choose your option</option>
+            <option value="Water">Water</option>
+            <option value="2">Option 2</option>
+            <option value="3">Option 3</option>
+        </select>        
+        
+        <div class="w3-row">
+          <a href="javascript:void(0)" onclick="openCity(event, 'Water');">
+            <div class="w3-quarter tablink w3-bottombar w3-hover-light-grey w3-padding">Water Treatment System</div>
+          </a>
+          <a href="javascript:void(0)" onclick="openCity(event, 'Paris');">
+            <div class="w3-quarter tablink w3-bottombar w3-hover-light-grey w3-padding">Paris</div>
+          </a>
+          <a href="javascript:void(0)" onclick="openCity(event, 'Tokyo');">
+            <div class="w3-quarter tablink w3-bottombar w3-hover-light-grey w3-padding">Tokyo</div>
+          </a>
+        <a href="javascript:void(0)" onclick="openCity(event, 'Tokyo');">
+            <div class="w3-quarter tablink w3-bottombar w3-hover-light-grey w3-padding">Tokyo</div>
+        </a>
+        <a href="javascript:void(0)" onclick="openCity(event, 'Tokyo');">
+            <div class="w3-quarter tablink w3-bottombar w3-hover-light-grey w3-padding">Tokyo</div>
+        </a>
+        <a href="javascript:void(0)" onclick="openCity(event, 'Tokyo');">
+            <div class="w3-quarter tablink w3-bottombar w3-hover-light-grey w3-padding">Tokyo</div>
+        </a>
+        <a href="javascript:void(0)" onclick="openCity(event, 'Tokyo');">
+            <div class="w3-quarter tablink w3-bottombar w3-hover-light-grey w3-padding">Tokyo</div>
+        </a>
+        <a href="javascript:void(0)" onclick="openCity(event, 'Tokyo');">
+            <div class="w3-quarter tablink w3-bottombar w3-hover-light-grey w3-padding">Tokyo</div>
+        </a>        
+        </div>
+      
+        <div id="Water" class="w3-container city" style="display:none">
+          <h2>Water Treatment System</h2>
+          <p>London is the capital city of England.</p>
+        </div>
+      
+        <div id="Paris" class="w3-container city" style="display:none">
+          <h2>Paris</h2>
+          <p>Paris is the capital of France.</p> 
+        </div>
+      
+        <div id="Tokyo" class="w3-container city" style="display:none">
+          <h2>Tokyo</h2>
+          <p>Tokyo is the capital of Japan.</p>
+        </div>
+</div>
+
+
+
+<!-- CAG Engineering Category Button -->
+<!-- The filterable elements. Note that some have multiple class names (this can be used if they belong to multiple categories) -->
+<div class="container">
+  <div class="filterDiv cars">BMW</div>
+  <div class="filterDiv colors fruits">Orange</div>
+  <div class="filterDiv cars">Volvo</div>
+  <div class="filterDiv colors">Red</div>
+  <div class="filterDiv cars animals">Mustang</div>
+  <div class="filterDiv colors">Blue</div>
+  <div class="filterDiv animals">Cat</div>
+  <div class="filterDiv animals">Dog</div>
+  <div class="filterDiv fruits">Melon</div>
+  <div class="filterDiv fruits animals">Kiwi</div>
+  <div class="filterDiv fruits">Banana</div>
+  <div class="filterDiv fruits">Lemon</div>
+  <div class="filterDiv animals">Cow</div>
+</div>
+
+
+
+
+
+<div class="w3-cell-row">
+    <div class="w3-container w3-light-grey w3-cell w3-mobile">
+
+<!-- Control buttons -->
+<p><button onclick="filterSelection('all')" class="w3-button w3-green">Green</button></p>
+<input id="all" class="w3-button" type="radio" onclick="filterSelection('all')" name="category" checked>
+<label for="all">Show all</label>
+
+
+<input id="car" type="radio" onclick="filterSelection('cars')" name="category">
+<label for="car">Cars</label>
+ 
+<input id="animals" type="radio" onclick="filterSelection('animals')" name="category">
+<label for="animals">Animals</label>
+<input id="Fruits" type="radio" onclick="filterSelection('fruits')" name="category">
+<label for="Fruits">Fruits</label>
+<input id="Colors" type="radio" onclick="filterSelection('colors')" name="category">
+<label for="Colors">Colors</label>
+
+      <p>Water Treatment System</p>
+      <p>Wastewater Treatment System</p>
+      <p>Industrial Chemicals Supply</p>
+      <p>Building Automation System</p>
+      <p>Filtration System</p>
+      <p>Air Cooled Chiller</p>
+      <p>Automatic​ Car Washing System</p>
+      <p>Intrusion​ ​ Detection​ ​ System</p>
+      <p>Biological Membrane Tank System</p>
+    </div>
+
+    <div class="w3-container w3-center w3-green w3-cell w3-mobile  w3-cell-middle">
+        <div class="w3-container">
+            <h2>Card Example</h2>
+            
+            <div class="w3-card-4 w3-dark-grey" style="width:50%">
+            
+                <div class="w3-container w3-center">
+                <h3>Friend Request</h3>
+                <img src="img_avatar3.png" alt="Avatar" style="width:80%">
+                <h5>John Doe</h5>
+            
+                <div class="w3-section">
+                    <button class="w3-button w3-green">Accept</button>
+                    <button class="w3-button w3-red">Decline</button>
+                </div>
+                </div>
+            
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="w3-bar">
+    <button class="w3-bar-item w3-button w3-black">Button</button>
+    <button class="w3-bar-item w3-button w3-teal">Button</button>
+    <button class="w3-bar-item w3-button w3-red">Button</button>
+    <button class="w3-bar-item w3-button w3-black">Button</button>
+    <button class="w3-bar-item w3-button w3-teal">Button</button>
+    <button class="w3-bar-item w3-button w3-red">Button</button>
+    <button class="w3-bar-item w3-button w3-black">Button</button>
+    <button class="w3-bar-item w3-button w3-teal">Button</button>
+    <button class="w3-bar-item w3-button w3-red">Button</button>
+    <button class="w3-bar-item w3-button w3-black">Button</button>
+    <button class="w3-bar-item w3-button w3-teal">Button</button>    
+</div>
+
+
+<!-- CAG Engineering Contact Info & Google Map & Contact Form -->
+
+<div class="w3-row" style="max-width:1564px">
+    
+    <div class="w3-third w3-padding-16 w3-container w3-green" style="min-height:300px;">
+        <div class="w3-xxxlarge w3-wide w3-center">
+            <i class="fa fa-map" aria-hidden="true"></i>                    
+        </div>
+        <h2 class="w3-center w3-wide">
+            <b>Office</b>
+        </h2>
+        <p class="w3-large w3-center">
+            No.38 (A), 3rd Floor, Moe Kaung Street, <br/> Yankin Tsp, Yangon, Myanmar.
+        </p>
+    </div>
+
+    <div class="w3-third w3-padding-16 w3-container w3-green" style="min-height:300px;">
+        <div class="w3-xxxlarge w3-wide w3-center">
+                <i class="fa fa-paper-plane" aria-hidden="true"></i>                
+        </div>
+        <h2 class="w3-center w3-wide">
+            <b>Queries</b>
+        </h2>
+        <p class="w3-large w3-center">
+            info@cagengineering.com
+        </p>        
+    </div>
+
+    <div class="w3-third w3-padding-16 w3-container w3-green" style="min-height:300px;">
+        <div class="w3-xxxlarge w3-wide w3-center">
+            <i class="fa fa-mobile" aria-hidden="true"></i>                
+        </div>        
+        <h2 class="w3-center w3-wide">
+            <b>Call Us</b>
+        </h2>
+        <p class="w3-large w3-center">
+            +95 9 257 070 200 <br/>
+            +95 9 257 070 300 <br/>
+            +95 9 925 707 0400
+        </p>        
+    </div>
+</div> 
+
+
+
+
+<!-- Join Pro Team Section -->
+<section class="w3-display-container w3-opacity-min" style="min-height:400px; background-attachment: fixed;background-position: center;background-repeat: no-repeat;background-size: cover;background-image: url('img/cover/join_pro_team_min.jpg');">
+  <div class="w3-display-middle w3-black w3-padding-large w3-button">
+    <h2>Discuss Your Requirments with Our Professional Team</h2>    
+  </div>
+</section>
+
+<!-- <div class="w3-display-container w3-content w3-wide" style="max-width:1500px;" id="home">
+    <img class="w3-image" src="img/cover/join_pro_team_min.jpg" alt="Architecture" width="1500" height="400">
+    <div class="w3-display-middle w3-margin-top w3-center">
+      <h1 class="w3-jumbo"><span class="w3-padding w3-black w3-text-green w3-opacity-min"><b>About Us</b></span></h1>
+    </div>
+    <div class="w3-display-bottommiddle w3-container w3-padding">
+      <p style="text-shadow:1px 1px 0 #444" class="w3-text-white w3-large">
+          <a href="#">Home</a> / 
+          <a href="#">About Us</a>
+      </p>
+    </div>
+  </div> -->
+
+
+<!-- Footer -->
+<footer class="w3-center w3-black w3-padding-16">
+    <img class="w3-padding-16" src="img/white-cag-logo-no-bk.png" width="400px" />
+  <p>
+    <a href="#">Home</a> | 
+    <a href="#">Services</a> | 
+    <a href="#">Products</a> | 
+    <a href="#">Projects</a> | 
+    <a href="#">About Us</a> | 
+    <a href="#">Contact</a>
+  </p>
+  <p>
+    <button class="w3-button w3-border w3-hover-green"><i class="fa fa-facebook"></i></button>
+    <button class="w3-button w3-border w3-hover-green"><i class="fa fa-youtube-play"></i></button>
+    <button class="w3-button w3-border w3-hover-green"><i class="fa fa-google-plus"></i></button>
+    <button class="w3-button w3-border w3-hover-green"><i class="fa fa-twitter"></i></button>
+    <button class="w3-button w3-border w3-hover-green"><i class="fa fa-linkedin"></i></button>
+  </p>
+  <p>Copyright © 2017 </p>
+  <p class="w3-tiny">Proudly developed by <a href="#" target="_blank">Arkar</a></p>
+</footer>
+
+
+<!-- W3 Tab JS -->
+
+<script>
+        function openCity(evt, cityName) {
+          var i, x, tablinks;
+          x = document.getElementsByClassName("city");
+          for (i = 0; i < x.length; i++) {
+             x[i].style.display = "none";
+          }
+          tablinks = document.getElementsByClassName("tablink");
+          for (i = 0; i < x.length; i++) {
+             tablinks[i].className = tablinks[i].className.replace(" w3-border-green", "");
+          }
+          document.getElementById(cityName).style.display = "block";
+          evt.currentTarget.firstElementChild.className += " w3-border-green";
+        }
+</script>
+
+
+<!-- Filter Element JS -->
+<script>
+    filterSelection("all")
+    function filterSelection(c) {
+    var x, i;
+    x = document.getElementsByClassName("filterDiv");
+    if (c == "all") c = "";
+    // Add the "show" class (display:block) to the filtered elements, and remove the "show" class from the elements that are not selected
+    for (i = 0; i < x.length; i++) {
+        w3RemoveClass(x[i], "show");
+        if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+    }
+    }
+
+    // Show filtered elements
+    function w3AddClass(element, name) {
+    var i, arr1, arr2;
+    arr1 = element.className.split(" ");
+    arr2 = name.split(" ");
+    for (i = 0; i < arr2.length; i++) {
+        if (arr1.indexOf(arr2[i]) == -1) {
+        element.className += " " + arr2[i];
+        }
+    }
+    }
+
+    // Hide elements that are not selected
+    function w3RemoveClass(element, name) {
+    var i, arr1, arr2;
+    arr1 = element.className.split(" ");
+    arr2 = name.split(" ");
+    for (i = 0; i < arr2.length; i++) {
+        while (arr1.indexOf(arr2[i]) > -1) {
+        arr1.splice(arr1.indexOf(arr2[i]), 1); 
+        }
+    }
+    element.className = arr1.join(" ");
+    }    
+</script>
+
+<!-- Add Google Maps -->
+<script>
+function myMap()
+{
+  myCenter=new google.maps.LatLng(16.833762, 96.169509);
+  var mapOptions= {
+    center:myCenter,
+    zoom:15, scrollwheel: false, draggable: false,
+    mapTypeId:google.maps.MapTypeId.ROADMAP
+  };
+  var map=new google.maps.Map(document.getElementById("googleMap"),mapOptions);
+
+  var marker = new google.maps.Marker({
+    position: myCenter,
+  });
+  marker.setMap(map);
+}
+</script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBuSr5a5KMyK3Y3k2iYryUhd2wf3H-aN7A&callback=myMap"></script>
+<!--
+To use this code on your website, get a free API key from Google.
+Read more at: https://www.w3schools.com/graphics/google_maps_basic.asp
+-->
+
+</body>
+</html>

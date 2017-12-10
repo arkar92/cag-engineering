@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html>
+<title>CAG Engineering | Projects</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link href="https://fonts.googleapis.com/css?family=Encode+Sans+Expanded:500" rel="stylesheet"> 
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<!-- favicon insert -->
+<link rel="apple-touch-icon" sizes="180x180" href="img/favicons/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="img/favicons/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="img/favicons/favicon-16x16.png">
+<link rel="manifest" href="img/favicons/manifest.json">
+<link rel="mask-icon" href="img/favicons/safari-pinned-tab.svg" color="#5bbad5">
+<meta name="theme-color" content="#ffffff">
+
+
+
+<style>
+    *,h1,p,label{
+        font-family: 'Encode Sans Expanded', sans-serif;
+    }
+    .fa-anchor,.fa-coffee {font-size:200px}
+    .material-icons {
+      vertical-align:-14%; 
+      font-size: 25px;
+      }
+
+    input[type="radio"] {
+        display: none;
+    }
+
+    input[type="radio"].toggle:checked + label {
+        /* Do something special with the selected state */
+    }
+
+      .container {
+        overflow: hidden;
+    }
+
+    .filterDiv {
+        /* float: left;
+        background-color: #2196F3;
+        color: #ffffff;
+        width: 100px;
+        line-height: 100px;
+        text-align: center;
+        margin: 2px; */
+        display: none; /* Hidden by default */
+    }
+
+    /* The "show" class is added to the filtered elements */
+    .show {
+        display: block;
+    }
+
+</style>
+
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar w3-white w3-wide w3-padding w3-card-2">
+    <a href="#home" class="w3-bar-item w3-button"><b>CAG</b> Engineering</a>
+    <!-- Float links to the right. Hide them on small screens -->
+    <div class="w3-right w3-hide-small">
+            <a href="#projects" class="w3-bar-item w3-button">Home</a>
+            <a href="#projects" class="w3-bar-item w3-button">Services</a>
+            <a href="#projects" class="w3-bar-item w3-button">Products</a>
+      <a href="#projects" class="w3-bar-item w3-button w3-green">Projects</a>
+      <a href="#about" class="w3-bar-item w3-button">About</a>
+      <a href="#contact" class="w3-bar-item w3-button">Contact</a>
+    </div>
+  </div>
+</div>
+
+<!-- Header -->
+<header class="w3-display-container w3-content w3-wide" style="max-width:1500px;"  id="home">
+  <img class="w3-image" src="img/cover/about_us_2_min.jpg" alt="Architecture" width="1500" height="800">
+  <div class="w3-display-middle w3-margin-top w3-center">
+    <h1 class="w3-jumbo"><span class="w3-padding w3-black w3-text-green w3-opacity-min"><b>Projects</b></span></h1>
+  </div>
+  <div class="w3-display-bottommiddle w3-container w3-padding">
+    <p style="text-shadow:1px 1px 0 #444" class="w3-text-white w3-large">
+        <a href="#">Home</a> / 
+        <a href="#">Projects</a>
+    </p>
+  </div>
+</header>
+
+<!-- CAG Engineering Category Button -->
+
+
+
+
+<div class="w3-cell-row">
+    <div class="w3-container w3-padding-16 w3-light-grey w3-cell w3-mobile w3-cell-middle" style="width:25%">
+
+    <!-- Control buttons -->
+    <!-- all project -->
+    <input class="w3-radio" id="all" type="radio" onclick="filterSelection('all')" name="category" checked>
+    <label class="w3-large w3-margin-bottom w3-button w3-black" for="all">Show All</label>
+    
+    <!-- Water Treatment System -->
+    <input id="car" type="radio" onclick="filterSelection('cars')" name="category">
+    <label class="w3-large w3-margin-bottom w3-button w3-black" for="car">Water Treatment System</label>
+
+    <!-- Wastewater Treatment System -->
+    <input id="animals" type="radio" onclick="filterSelection('animals')" name="category">
+    <label class="w3-large w3-margin-bottom w3-button w3-black" for="animals">Wastewater Treatment System</label>
+
+    <!-- Industrial Chemicals Supply -->
+    <input id="Fruits" type="radio" onclick="filterSelection('fruits')" name="category">
+    <label class="w3-large w3-margin-bottom w3-button w3-black" for="Fruits">Industrial Chemicals Supply</label>
+
+    <!-- Building Automation System -->
+    <input id="Colors" type="radio" onclick="filterSelection('colors')" name="category">
+    <label class="w3-large w3-margin-bottom w3-button w3-black" for="Colors">Building Automation System</label>
+
+      <!-- <p>Water Treatment System</p>
+      <p>Wastewater Treatment System</p>
+      <p>Industrial Chemicals Supply</p>
+      <p>Building Automation System</p>
+      <p>Filtration System</p>
+      <p>Air Cooled Chiller</p>
+      <p>Automatic​ Car Washing System</p>
+      <p>Intrusion​ ​ Detection​ ​ System</p>
+      <p>Biological Membrane Tank System</p> -->
+
+    </div>
+
+    <div class="w3-container w3-center w3-green w3-cell w3-mobile  w3-cell-middle">
+
+<!-- The filterable elements. Note that some have multiple class names (this can be used if they belong to multiple categories) -->
+
+<!-- testing with w3 css -->
+<div class="w3-row w3-padding-16 w3-animate-opacity">
+
+    <div class="w3-container w3-quarter filterDiv cars w3-animate-opacity w3-margin-bottom">
+        <div class="w3-card-4">
+            <img src="img/client/client1.png" alt="Norway" style="width:100%;">
+            <div class="w3-container w3-white w3-center">
+                <p>BMW</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-container w3-quarter filterDiv colors fruits w3-animate-opacity w3-margin-bottom">
+        <div class="w3-card-4">
+            <img src="img/client/client2.png" alt="Norway" style="width:100%;">
+            <div class="w3-container w3-white w3-center">
+                <p>Orange</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-container w3-quarter filterDiv cars w3-animate-opacity w3-margin-bottom">
+        <div class="w3-card-4">
+            <img src="img/client/client3.png" alt="Norway" style="width:100%;">
+            <div class="w3-container w3-white w3-center">
+                <p>Volvo</p>
+            </div>
+        </div>
+    </div>
+    
+    <div class="w3-container w3-quarter filterDiv colors w3-animate-opacity w3-margin-bottom">
+        <div class="w3-card-4">
+            <img src="img/client/client4.png" alt="Norway" style="width:100%;">
+            <div class="w3-container w3-white w3-center">
+                <p>Red</p>
+            </div>
+        </div>
+    </div>
+    
+    <div class="w3-container w3-quarter filterDiv cars animals w3-animate-opacity w3-margin-bottom">
+        <div class="w3-card-4">
+            <img src="img/client/client5.png" alt="Norway" style="width:100%;">
+            <div class="w3-container w3-white w3-center">
+                <p>Mustang</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-container w3-quarter filterDiv cars animals w3-animate-opacity w3-margin-bottom">
+        <div class="w3-card-4">
+            <img src="img/client/client6.png" alt="Norway" style="width:100%;">
+            <div class="w3-container w3-white w3-center">
+                <p>Mustang</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-container w3-quarter filterDiv cars animals w3-animate-opacity w3-margin-bottom">
+        <div class="w3-card-4">
+            <img src="img/client/client7.png" alt="Norway" style="width:100%;">
+            <div class="w3-container w3-white w3-center">
+                <p>Mustang</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-container w3-quarter filterDiv cars animals w3-animate-opacity w3-margin-bottom">
+        <div class="w3-card-4">
+            <img src="img/client/client8.png" alt="Norway" style="width:100%;">
+            <div class="w3-container w3-white w3-center">
+                <p>Mustang</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-container w3-quarter filterDiv cars animals w3-animate-opacity w3-margin-bottom">
+        <div class="w3-card-4">
+            <img src="img/client/client9.png" alt="Norway" style="width:100%;">
+            <div class="w3-container w3-white w3-center">
+                <p>Mustang</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-container w3-quarter filterDiv cars animals w3-animate-opacity w3-margin-bottom">
+        <div class="w3-card-4">
+            <img src="img/client/client10.png" alt="Norway" style="width:100%;">
+            <div class="w3-container w3-white w3-center">
+                <p>Mustang</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-container w3-quarter filterDiv cars animals w3-animate-opacity w3-margin-bottom">
+        <div class="w3-card-4">
+            <img src="img/client/client11.png" alt="Norway" style="width:100%;">
+            <div class="w3-container w3-white w3-center">
+                <p>Mustang</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-container w3-quarter filterDiv cars animals w3-animate-opacity w3-margin-bottom">
+        <div class="w3-card-4">
+            <img src="img/client/client12.png" alt="Norway" style="width:100%;">
+            <div class="w3-container w3-white w3-center">
+                <p>Mustang</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-container w3-quarter filterDiv cars animals w3-animate-opacity w3-margin-bottom">
+        <div class="w3-card-4">
+            <img src="img/client/client13.png" alt="Norway" style="width:100%;">
+            <div class="w3-container w3-white w3-center">
+                <p>Mustang</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-container w3-quarter filterDiv cars animals w3-animate-opacity w3-margin-bottom">
+        <div class="w3-card-4">
+            <img src="img/client/client14.png" alt="Norway" style="width:100%;">
+            <div class="w3-container w3-white w3-center">
+                <p>Mustang</p>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+
+<div class="container">
+    <!-- <div class="filterDiv cars">BMW</div> -->
+    <!-- <div class="filterDiv colors fruits">Orange</div> -->
+    <!-- <div class="filterDiv cars">Volvo</div> -->
+    <!-- <div class="filterDiv colors">Red</div> -->
+    <!-- <div class="filterDiv cars animals">Mustang</div> -->
+    <!-- <div class="filterDiv colors">Blue</div>
+    <div class="filterDiv animals">Cat</div>
+    <div class="filterDiv animals">Dog</div>
+    <div class="filterDiv fruits">Melon</div>
+    <div class="filterDiv fruits animals">Kiwi</div>
+    <div class="filterDiv fruits">Banana</div>
+    <div class="filterDiv fruits">Lemon</div>
+    <div class="filterDiv animals">Cow</div> -->
+</div>        
+
+    </div>
+</div>
+
+
+
+<!-- Join Pro Team Section -->
+<section class="w3-display-container w3-opacity-min" style="min-height:400px; background-attachment: fixed;background-position: center;background-repeat: no-repeat;background-size: cover;background-image: url('img/cover/join_pro_team_min.jpg');">
+  <div class="w3-display-middle w3-black w3-padding-large w3-button">
+    <h2>Discuss Your Requirments with Our Professional Team</h2>    
+  </div>
+</section>
+
+<!-- <div class="w3-display-container w3-content w3-wide" style="max-width:1500px;" id="home">
+    <img class="w3-image" src="img/cover/join_pro_team_min.jpg" alt="Architecture" width="1500" height="400">
+    <div class="w3-display-middle w3-margin-top w3-center">
+      <h1 class="w3-jumbo"><span class="w3-padding w3-black w3-text-green w3-opacity-min"><b>About Us</b></span></h1>
+    </div>
+    <div class="w3-display-bottommiddle w3-container w3-padding">
+      <p style="text-shadow:1px 1px 0 #444" class="w3-text-white w3-large">
+          <a href="#">Home</a> / 
+          <a href="#">About Us</a>
+      </p>
+    </div>
+  </div> -->
+
+
+<!-- Footer -->
+<footer class="w3-center w3-black w3-padding-16">
+    <img class="w3-padding-16" src="img/white-cag-logo-no-bk.png" width="400px" />
+  <p>
+    <a href="#">Home</a> | 
+    <a href="#">Services</a> | 
+    <a href="#">Products</a> | 
+    <a href="#">Projects</a> | 
+    <a href="#">About Us</a> | 
+    <a href="#">Contact</a>
+  </p>
+  <p>
+    <button class="w3-button w3-border w3-hover-green"><i class="fa fa-facebook"></i></button>
+    <button class="w3-button w3-border w3-hover-green"><i class="fa fa-youtube-play"></i></button>
+    <button class="w3-button w3-border w3-hover-green"><i class="fa fa-google-plus"></i></button>
+    <button class="w3-button w3-border w3-hover-green"><i class="fa fa-twitter"></i></button>
+    <button class="w3-button w3-border w3-hover-green"><i class="fa fa-linkedin"></i></button>
+  </p>
+  <p>Copyright © 2017 </p>
+  <p class="w3-tiny">Proudly developed by <a href="#" target="_blank">Arkar</a></p>
+</footer>
+
+
+<!-- W3 Tab JS -->
+
+<script>
+        function openCity(evt, cityName) {
+          var i, x, tablinks;
+          x = document.getElementsByClassName("city");
+          for (i = 0; i < x.length; i++) {
+             x[i].style.display = "none";
+          }
+          tablinks = document.getElementsByClassName("tablink");
+          for (i = 0; i < x.length; i++) {
+             tablinks[i].className = tablinks[i].className.replace(" w3-border-green", "");
+          }
+          document.getElementById(cityName).style.display = "block";
+          evt.currentTarget.firstElementChild.className += " w3-border-green";
+        }
+</script>
+
+
+<!-- Filter Element JS -->
+<script>
+    filterSelection("all")
+    function filterSelection(c) {
+    var x, i;
+    x = document.getElementsByClassName("filterDiv");
+    if (c == "all") c = "";
+    // Add the "show" class (display:block) to the filtered elements, and remove the "show" class from the elements that are not selected
+    for (i = 0; i < x.length; i++) {
+        w3RemoveClass(x[i], "show");
+        if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+    }
+    }
+
+    // Show filtered elements
+    function w3AddClass(element, name) {
+    var i, arr1, arr2;
+    arr1 = element.className.split(" ");
+    arr2 = name.split(" ");
+    for (i = 0; i < arr2.length; i++) {
+        if (arr1.indexOf(arr2[i]) == -1) {
+        element.className += " " + arr2[i];
+        }
+    }
+    }
+
+    // Hide elements that are not selected
+    function w3RemoveClass(element, name) {
+    var i, arr1, arr2;
+    arr1 = element.className.split(" ");
+    arr2 = name.split(" ");
+    for (i = 0; i < arr2.length; i++) {
+        while (arr1.indexOf(arr2[i]) > -1) {
+        arr1.splice(arr1.indexOf(arr2[i]), 1); 
+        }
+    }
+    element.className = arr1.join(" ");
+    }    
+</script>
+
+<!-- Add Google Maps -->
+<script>
+function myMap()
+{
+  myCenter=new google.maps.LatLng(16.833762, 96.169509);
+  var mapOptions= {
+    center:myCenter,
+    zoom:15, scrollwheel: false, draggable: false,
+    mapTypeId:google.maps.MapTypeId.ROADMAP
+  };
+  var map=new google.maps.Map(document.getElementById("googleMap"),mapOptions);
+
+  var marker = new google.maps.Marker({
+    position: myCenter,
+  });
+  marker.setMap(map);
+}
+</script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBuSr5a5KMyK3Y3k2iYryUhd2wf3H-aN7A&callback=myMap"></script>
+<!--
+To use this code on your website, get a free API key from Google.
+Read more at: https://www.w3schools.com/graphics/google_maps_basic.asp
+-->
+
+</body>
+</html>
