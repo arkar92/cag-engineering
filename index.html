@@ -17,11 +17,15 @@
 
 <!--testing page load-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="js/jquery.loadie.min.js"></script>
     
     <script>
-        jQuery(window).load(function(){
-            jQuery(".hameid-loader-overlay").fadeOut(500);
-        });
+        // 1st work
+//        jQuery(window).load(function(){
+//            jQuery(".hameid-loader-overlay").fadeOut(500);
+//        });
+        
+        $('body').loadie(); // Change the wrapper if wanted.
     </script>
     
 <style>        
@@ -46,7 +50,7 @@
 
 <body>
 <!--    test page load-->
-<div class="hameid-loader-overlay"></div>
+<!--<div class="hameid-loader-overlay"></div>-->
 
 <!-- Navbar (sit on top) -->
 <div class="w3-top">
