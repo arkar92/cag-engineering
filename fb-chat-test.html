@@ -29,6 +29,7 @@
 <!--<iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fcagengineering%2Fposts%2F1959536250982173&width=500" width="500" height="687" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>-->
 
 <!--fb comment-->
+<!--
 <div class="fb-comments" data-href="https://arkar92.github.io/cag-engineering/fb-chat-test.html" data-numposts="5"></div>
 
 <div id="fb-root"></div>
@@ -39,3 +40,57 @@
   js.src = 'https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.11&appId=1611643122418985';
   fjs.parentNode.insertBefore(js, fjs);
 }(document, 'script', 'facebook-jssdk'));</script>
+-->
+
+<!--fb recation testing-->
+
+<style>
+.like-btn:hover .reactions-box {
+  display: block;
+}
+    
+.like-btn:hover .reaction {
+  opacity: 1;
+  animation-name: reaction_delay;
+  animation-duration: .5s;
+}   
+ 
+@keyframes reaction_delay {
+  0% {
+    width: 48px;
+    height: 48px;
+    top: 60px;
+  }
+  48% {
+    width: 56px;
+    height: 56px;
+    top: 5px;
+  }    
+  100% {
+    width: 48px;
+    height: 48px;
+    top: 8px;
+  }
+}
+</style>
+
+<div class="facebook-reaction"><!-- container div for reaction system -->
+    <span class="like-btn"> <!-- Default like button -->
+        <span class="like-btn-emo like-btn-default"></span> <!-- Default like button emotion-->
+        <span class="like-btn-text">Like</span> <!-- Default like button text,(Like, wow, sad..) default:Like  -->
+          <ul class="reactions-box"> <!-- Reaction buttons container-->
+                <li class="reaction reaction-like" data-reaction="Like"></li>
+                <li class="reaction reaction-love" data-reaction="Love"></li>
+                <li class="reaction reaction-haha" data-reaction="HaHa"></li>
+                <li class="reaction reaction-wow" data-reaction="Wow"></li>
+                <li class="reaction reaction-sad" data-reaction="Sad"></li>
+                <li class="reaction reaction-angry" data-reaction="Angry"></li>
+          </ul>
+    </span>
+    <div class="like-stat"> <!-- Like statistic container-->
+        <span class="like-emo"> <!-- like emotions container -->
+            <span class="like-btn-like"></span> <!-- given emotions like, wow, sad (default:Like) -->
+        </span>
+        <span class="like-details">Arkaprava Majumder and 1k others</span>
+    </div>
+</div>
