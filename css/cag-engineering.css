@@ -62,19 +62,3 @@
 }
 
 /* end of facebook chat pulgin */
-
-@media (max-width: 400px) {
-    .fb-widget{
-        width: 300px;
-    }
-    
-    .fb-page{
-        width: 300xp;
-    }
-
-/*
-    .fb-page .fb_iframe_widget{
-        width: 300px;
-    }
-*/
-}
