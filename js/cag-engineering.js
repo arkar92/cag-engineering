@@ -15,3 +15,9 @@ function mobileNav() {
         x.className = x.className.replace(" w3-show", "");
     }
 }
+
+// home page water treatment click 
+function clickHomeWater() {
+    window.location.assign("water.html")
+}
+            
