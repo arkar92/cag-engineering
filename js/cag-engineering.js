@@ -20,4 +20,7 @@ function mobileNav() {
 function clickHomeWater() {
     window.location.assign("water.html")
 }
+
+// home page hero slider
+heroSlider = w3.slideshow(".hero-slide", 0);
             
