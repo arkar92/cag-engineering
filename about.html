@@ -4,7 +4,8 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link href="https://fonts.googleapis.com/css?family=Encode+Sans+Expanded:500" rel="stylesheet"> 
+<link rel="stylesheet" href="css/cag-engineering.css">
+<link href="https://fonts.googleapis.com/css?family=Encode+Sans+Expanded:500" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 <!-- favicon insert -->
@@ -15,56 +16,96 @@
 <link rel="mask-icon" href="img/favicons/safari-pinned-tab.svg" color="#5bbad5">
 <meta name="theme-color" content="#ffffff">
 
+<!--js plugin -->
+<script src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.9"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="https://www.w3schools.com/lib/w3.js"></script>
+<script src="js/cag-engineering.js"></script>
 
-
-<style>
-    *,h1,p{
-        font-family: 'Encode Sans Expanded', sans-serif;
-    }
-    .fa-anchor,.fa-coffee {font-size:200px}
-    .material-icons {
-      vertical-align:-14%; 
-      font-size: 25px;
-      }
-</style>
 
 <body>
 
-<!-- Navbar (sit on top) -->
-<div class="w3-top">
-  <div class="w3-bar w3-white w3-wide w3-padding w3-card-2">
-    <a href="#home" class="w3-bar-item w3-button"><b>CAG</b> Engineering</a>
-    <!-- Float links to the right. Hide them on small screens -->
-    <div class="w3-right w3-hide-small">
-            <a href="#projects" class="w3-bar-item w3-button">Home</a>
-            <a href="#projects" class="w3-bar-item w3-button">Services</a>
-            <a href="#projects" class="w3-bar-item w3-button">Products</a>
-      <a href="#projects" class="w3-bar-item w3-button">Projects</a>
-      <a href="#about" class="w3-bar-item w3-button w3-green">About</a>
-      <a href="#contact" class="w3-bar-item w3-button">Contact</a>
+        <!-- page pre-loading -->
+    <div class="hameid-loader-overlay w3-display-container">
+        <div class="w3-display-middle w3-center">
+            <img src="img/white-cag-logo-no-bk.png" class="w3-image" />
+            <h1 class="w3-center w3-text-white w3-large">Welcome to <b><span class="w3-text-green">CAG</span> Engineering</b></h1>
+            <!--        <h2 class="w3-center w3-text-white w3-medium">Page is loading...</h2>-->
+            <div class="w3-center">
+                <img src="img/load.gif" style="width: 50px" />
+            </div>
+        </div>
     </div>
-  </div>
-</div>
 
-<!-- Header -->
-<header class="w3-display-container w3-content w3-wide" style="max-width:1500px;"  id="home">
-  <img class="w3-image" src="img/cover/about_us_2_min.jpg" alt="Architecture" width="1500" height="800">
-  <div class="w3-display-middle w3-margin-top w3-center">
-    <h1 class="w3-jumbo"><span class="w3-padding w3-black w3-text-green w3-opacity-min"><b>About Us</b></span></h1>
-  </div>
-  <div class="w3-display-bottommiddle w3-container w3-padding">
-    <p style="text-shadow:1px 1px 0 #444" class="w3-text-white w3-large">
-        <a href="#">Home</a> / 
-        <a href="#">About Us</a>
-    </p>
-  </div>
-</header>
+
+    <!-- ////
+            Navigation Bar
+        //// -->
+
+    <!-- Navbar (sit on top) -->
+    <div class="w3-top">
+        <div class="w3-bar w3-white w3-wide w3-padding w3-card">
+            <a class="w3-bar-item w3-button w3-padding-large  w3-hide-large w3-right" href="javascript:void(0)" onclick="mobileNav()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+            <a href="#home" class="w3-bar-item w3-button"><b class="w3-text-green">CAG</b> Engineering</a>
+            <!-- Float links to the right. Hide them on small screens -->
+            <div class="w3-right w3-hide-small w3-hide-medium">
+                <a href="#projects" class="w3-bar-item w3-button">Home</a>
+                <a href="#projects" class="w3-bar-item w3-button">Solutions</a>
+                <!-- <a href="#projects" class="w3-bar-item w3-button">Services</a> -->
+                <!-- <a href="#projects" class="w3-bar-item w3-button">Products</a> -->
+                <a href="#projects" class="w3-bar-item w3-button">Projects</a>
+                <a href="#about" class="w3-bar-item w3-green w3-button">About</a>
+                <a href="#contact" class="w3-bar-item w3-button">Contact</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navbar on small screens -->
+    <div id="navDemo" class="w3-bar-block w3-light-grey w3-hide w3-hide-large w3-top" style="margin-top:60px">
+        <a href="#band" class="w3-bar-item w3-button w3-padding-large">Home</a>
+        <a href="#tour" class="w3-bar-item w3-button w3-padding-large">Solutions</a>
+        <a href="#contact" class="w3-bar-item w3-button w3-padding-large">Projects</a>
+        <a href="#" class="w3-bar-item w3-button w3-padding-large w3-green">About</a>
+        <a href="#" class="w3-bar-item w3-button w3-padding-large">Contact</a>
+    </div>    
+
+    
+    <!-- Header -->
+    <header class="w3-display-container w3-content w3-wide" style="max-width:1500px;" id="home">
+        <!-- Large Screen Image -->
+        <img class="w3-image w3-hide-small" src="img/cover/about_us_2_min.jpg" alt="Architecture" width="1500" height="800">
+        <!-- Small Screen Image -->
+        <img class="w3-image w3-hide-large w3-hide-medium" src="img/cover/cag-about-mobile.jpg" alt="Architecture" width="1500" style="height:100%">
+        <!-- Large Screen Cover Text -->
+        <div class="w3-display-middle w3-margin-top w3-black w3-opacity-min w3-center w3-hide-small">
+            <h1 class="w3-jumbo"><span class="w3-padding w3-text-green"><b>About Us</b></span></h1>
+        </div>
+        <!-- Small Screen Cover Text -->
+        <div class="w3-display-middle w3-margin-top w3-black w3-opacity-min w3-center w3-hide-large w3-hide-medium">
+            <h1 class="w3-xxlarge w3-center"><span class=" w3-text-green"><b>About Us</b></span></h1>
+        </div>
+        <!-- Large Screen Path Text -->
+        <div class="w3-display-bottommiddle w3-container w3-padding w3-hide-small">
+            <p style="text-shadow:1px 1px 0 #444" class="w3-text-white w3-large">
+                <a href="#">Home</a> /
+                <a href="#">About Us</a>                
+            </p>
+        </div>
+        <!-- Small Screen Path Text -->
+        <div class="w3-display-bottomleft w3-container w3-padding w3-hide-large w3-hide-medium">
+            <p style="text-shadow:1px 1px 0 #444" class="w3-text-white w3-large">
+                <a href="#">Home</a> /
+                <a href="#">About Us</a>                
+            </p>
+        </div>
+    </header>
+    
 
 
 
 
   <!-- Introduction of CAG Engineering  -->
-  <div class="w3-row-padding w3-padding-64 w3-container" style="max-width:1564px">
+  <div class="w3-row-padding w3-padding-64 w3-container w3-light-grey" style="max-width:1564px">
     <div class="w3-content"> <!-- w3-content -->
       
       <div class="w3-col l8 s12">
@@ -100,6 +141,7 @@
 
     <!-- Testing div -->
 
+    
 
   <!-- Service of CAG Engineering  -->
   <div class="w3-row-padding w3-padding-16 w3-container w3-white" style="max-width:1564px">    
@@ -107,94 +149,115 @@
         <h1 class="w3-text-green w3-center">Solutions</h1>        
 
         <div class="w3-row-padding w3-center">
-          <div class="w3-col l6 m6 w3-margin-bottom w3-margin-top">
-            <div class="w3-display-container w3-card-4">        
-              <img width="100%" src="img/solution/water_treatment_system_min.jpg" alt="House" >
-              <div class="w3-display-middle w3-opacity-min w3-padding-large w3-black w3-text-green w3-center w3-wide" >
-                <p class="w3-xlarge"><b>Water Treatment System</b></p>
-            </div>
-          </div>
-        </div>
 
-        <div class="w3-col l6 m6 w3-margin-bottom w3-margin-top">
-          <div class="w3-display-container w3-card-4">        
-            <img class="w3-opacity-min" width="100%" src="img/solution/waste_water_min.jpg" alt="House" >
-            <div class="w3-display-middle w3-opacity-min w3-padding-large w3-black w3-text-green w3-center w3-wide" >
-              <p class="w3-xlarge"><b>Wastewater Treatment System</b></p>
-            </div>
-          </div>
-        </div>        
-
-        <div class="w3-col l6 m6 w3-margin-bottom w3-margin-top">
-          <div class="w3-display-container w3-card-4">        
-            <img class="w3-opacity-min" width="100%" src="img/solution/industrial​_chemicals​_supply_min.jpg" alt="House" >
-            <div class="w3-display-middle w3-opacity-min w3-padding-large w3-black w3-text-green w3-center w3-wide" >
-              <p class="w3-xlarge"><b>Industrial Chemicals Supply</b></p>
-            </div>
-          </div>
-        </div>                
-
-        <div class="w3-col l6 m6 w3-margin-bottom w3-margin-top">
-          <div class="w3-display-container w3-card-4">        
-            <img class="w3-opacity-min" width="100%" src="img/solution/bas_min.jpg" alt="House" >
-            <div class="w3-display-middle w3-opacity-min w3-padding-large w3-black w3-text-green w3-center w3-wide" >
-              <p class="w3-xlarge"><b>Building Automation System</b></p>
-            </div>
-          </div>
-        </div>            
-
-        <div class="w3-col l6 m6 w3-margin-bottom w3-margin-top">
-          <div class="w3-display-container w3-card-4">        
-            <img class="w3-opacity-min" width="100%" src="img/solution/filter_system_min.jpg" alt="House" >
-            <div class="w3-display-middle w3-opacity-min w3-padding-large w3-black w3-text-green w3-center w3-wide" >
-              <p class="w3-xlarge"><b>Filtration System</b></p>
-            </div>
-          </div>
-        </div>
-
-        <div class="w3-col l6 m6 w3-margin-bottom w3-margin-top">
-          <div class="w3-display-container w3-card-4">        
-            <img class="w3-opacity-min" width="100%" src="img/solution/air_cooled_chiller_min.jpg" alt="House" >
-            <div class="w3-display-middle w3-opacity-min w3-padding-large w3-black w3-text-green w3-center w3-wide" >
-              <p class="w3-xlarge"><b>Air Cooled Chiller</b></p>
-            </div>
-          </div>
-        </div>
-
-        <div class="w3-col l6 m6 w3-margin-bottom w3-margin-top">
-          <div class="w3-display-container w3-card-4">        
-            <img class="w3-opacity-min" width="100%" src="img/solution/car_wash_min.jpg" alt="House" >
-            <div class="w3-display-middle w3-opacity-min w3-padding-large w3-black w3-text-green w3-center w3-wide" >
-              <p class="w3-xlarge"><b>Automatic​ Car Washing System</b></p>
-            </div>
-          </div>
-        </div>
-
-        <div class="w3-col l6 m6 w3-margin-bottom w3-margin-top">
-          <div class="w3-display-container w3-card-4">        
-            <img class="w3-opacity-min" width="100%" src="img/solution/IDS_min.jpg" alt="House" >
-            <div class="w3-display-middle w3-opacity-min w3-padding-large w3-black w3-text-green w3-center w3-wide" >
-              <p class="w3-xlarge"><b>Intrusion​ ​ Detection​ ​ System</b></p>
-            </div>
-          </div>
-        </div>
-        
-        <div class="w3-col l12 m6 w3-margin-bottom w3-margin-top">
-          <div class="w3-row">
-            <div class="w3-col l3">&nbsp;</div>
-            <div class="w3-col l6">
-                <div class="w3-display-container w3-card-4 w3-center">
-                    <img class="w3-opacity-min" width="100%" src="img/solution/bio_tank_min.jpg" alt="House" >
-                    <div class="w3-display-middle w3-opacity-min w3-padding-large w3-black w3-text-green w3-center w3-wide" >
-                      <p class="w3-xlarge"><b>Biological Membrane Tank System</b></p>
+                    <!-- water treatment service -->
+                    <div class="w3-col l6 m6 w3-margin-bottom w3-margin-top" onclick="clickHomeWater()" style="cursor:pointer">
+                        <div class="w3-display-container w3-card-4 w3-opacity w3-hover-opacity-off">
+                            <img width="100%" src="img/solution/water_treatment_system_min.jpg" alt="House">
+                            <div class="w3-display-middle w3-opacity-min w3-padding-large w3-black w3-text-green w3-center w3-wide">
+                                <p class="w3-xlarge w3-hide-small w3-hide-medium"><b>Water Treatment System</b></p>
+                                <p class="w3-large w3-hide-large"><b>Water Treatment System</b></p>
+                            </div>
+                        </div>
                     </div>
-                  </div>
-            </div>
-            <div class="w3-col l3">&nbsp;</div>
-          </div>
-        </div>              
 
-    </div>
+
+
+                    <!-- waste water treatment service -->
+                    <div class="w3-col l6 m6 w3-margin-bottom w3-margin-top" style="cursor:pointer">
+                        <div class="w3-display-container w3-card-4 w3-opacity w3-hover-opacity-off">
+                            <img class="w3-opacity-min" width="100%" src="img/solution/waste_water_min.jpg" alt="House">
+                            <div class="w3-display-middle w3-opacity-min w3-padding-large w3-black w3-text-green w3-center w3-wide">
+                                <p class="w3-xlarge w3-hide-small w3-hide-medium"><b>Wastewater Treatment System</b></p>
+                                <p class="w3-large w3-hide-large"><b>Wastewater Treatment System</b></p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- industrial chemical supply -->
+                    <div class="w3-col l6 m6 w3-margin-bottom w3-margin-top" style="cursor:pointer">
+                        <div class="w3-display-container w3-card-4 w3-opacity w3-hover-opacity-off">
+                            <img class="w3-opacity-min" width="100%" src="img/solution/industrial%E2%80%8B_chemicals%E2%80%8B_supply_min.jpg" alt="House">
+                            <div class="w3-display-middle w3-opacity-min w3-padding-large w3-black w3-text-green w3-center w3-wide">
+                                <p class="w3-xlarge w3-hide-small w3-hide-medium"><b>Industrial Chemicals Supply</b></p>
+                                <p class="w3-large w3-hide-large"><b>Industrial Chemicals Supply</b></p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- building automation system -->
+                    <div class="w3-col l6 m6 w3-margin-bottom w3-margin-top" style="cursor:pointer">
+                        <div class="w3-display-container w3-card-4 w3-opacity w3-hover-opacity-off">
+                            <img class="w3-opacity-min" width="100%" src="img/solution/bas_min.jpg" alt="House">
+                            <div class="w3-display-middle w3-opacity-min w3-padding-large w3-black w3-text-green w3-center w3-wide">
+                                <p class="w3-xlarge w3-hide-small w3-hide-medium"><b>Building Automation System</b></p>
+                                <p class="w3-large w3-hide-large"><b>Building Automation System</b></p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- filtration system -->
+                    <div class="w3-col l6 m6 w3-margin-bottom w3-margin-top" style="cursor:pointer">
+                        <div class="w3-display-container w3-card-4 w3-opacity w3-hover-opacity-off">
+                            <img class="w3-opacity-min" width="100%" src="img/solution/filter_system_min.jpg" alt="House">
+                            <div class="w3-display-middle w3-opacity-min w3-padding-large w3-black w3-text-green w3-center w3-wide">
+                                <p class="w3-xlarge w3-hide-small w3-hide-medium"><b>Filtration System</b></p>
+                                <p class="w3-large w3-hide-large"><b>Filtration System</b></p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- air cooled chiller -->
+                    <div class="w3-col l6 m6 w3-margin-bottom w3-margin-top" style="cursor:pointer">
+                        <div class="w3-display-container w3-card-4 w3-opacity w3-hover-opacity-off">
+                            <img class="w3-opacity-min" width="100%" src="img/solution/air_cooled_chiller_min.jpg" alt="House">
+                            <div class="w3-display-middle w3-opacity-min w3-padding-large w3-black w3-text-green w3-center w3-wide">
+                                <p class="w3-xlarge w3-hide-small w3-hide-medium"><b>Air Cooled Chiller</b></p>
+                                <p class="w3-large w3-hide-large"><b>Air Cooled Chiller</b></p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- automatic car washing system -->
+                    <div class="w3-col l6 m6 w3-margin-bottom w3-margin-top" style="cursor:pointer">
+                        <div class="w3-display-container w3-card-4 w3-opacity w3-hover-opacity-off">
+                            <img class="w3-opacity-min" width="100%" src="img/solution/car_wash_min.jpg" alt="House">
+                            <div class="w3-display-middle w3-opacity-min w3-padding-large w3-black w3-text-green w3-center w3-wide">
+                                <p class="w3-xlarge w3-hide-small w3-hide-medium"><b>Automatic Car Washing System</b></p>
+                                <p class="w3-large w3-hide-large"><b>Automatic Car Washing System</b></p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- intrusion detection system -->
+                    <div class="w3-col l6 m6 w3-margin-bottom w3-margin-top" style="cursor:pointer">
+                        <div class="w3-display-container w3-card-4 w3-opacity w3-hover-opacity-off">
+                            <img class="w3-opacity-min" width="100%" src="img/solution/IDS_min.jpg" alt="House">
+                            <div class="w3-display-middle w3-opacity-min w3-padding-large w3-black w3-text-green w3-center w3-wide">
+                                <p class="w3-xlarge w3-hide-small w3-hide-medium"><b>Intrusion Detection System</b></p>
+                                <p class="w3-large w3-hide-large"><b>Intrusion Detection System</b></p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--biological membrane tank system-->
+                    <div class="w3-col l12 m6 w3-margin-bottom w3-margin-top">
+                        <div class="w3-row">
+                            <div class="w3-col l3">&nbsp;</div>
+                            <div class="w3-col l6" style="cursor:pointer">
+                                <div class="w3-display-container w3-card-4 w3-opacity w3-hover-opacity-off w3-center">
+                                    <img class="w3-opacity-min" width="100%" src="img/solution/bio_tank_min.jpg" alt="House">
+                                    <div class="w3-display-middle w3-opacity-min w3-padding-large w3-black w3-text-green w3-center w3-wide">
+                                        <p class="w3-xlarge w3-hide-small w3-hide-medium"><b>Biological Membrane Tank System</b></p>
+                                        <p class="w3-large w3-hide-large"><b>Biological Membrane Tank System</b></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="w3-col l3">&nbsp;</div>
+                        </div>
+                    </div>
+
+                </div>
         <p class="w3-text-grey w3-large">
             We​ aim​ to​ provide​ advance​ Water​ and​ Waste​ Water​ Treatment​
             and​ its​ instrument Equipment​ to​ Myanmar​ Industrial​ Sectors​ including​
@@ -458,12 +521,15 @@
 </div>
 
 
-<!-- Join Pro Team Section -->
-<section class="w3-display-container w3-opacity-min" style="min-height:400px; background-attachment: fixed;background-position: center;background-repeat: no-repeat;background-size: cover;background-image: url('img/cover/join_pro_team_min.jpg');">
-  <div class="w3-display-middle w3-black w3-padding-large w3-button">
-    <h2>Discuss Your Requirments with Our Professional Team</h2>    
-  </div>
-</section>
+    <!-- Join Pro Team Section -->
+    <section class="w3-display-container w3-opacity-min" style="min-height:400px; background-attachment: fixed;background-position: center;background-repeat: no-repeat;background-size: cover;background-image: url('img/cover/join_pro_team_min.jpg');">
+        <div class="w3-display-middle w3-black w3-padding-large w3-button">
+            <!-- large screen btn -->
+            <h2 class="w3-hide-small">Discuss Your Requirments with Our Professional Team</h2>
+            <!-- small screen btn -->
+            <h2 class="w3-hide-large w3-hide-medium w3-xlarge">Discuss Your Requirments <br/> with Our Professional Team</h2>
+        </div>
+    </section>
 
 <!-- <div class="w3-display-container w3-content w3-wide" style="max-width:1500px;" id="home">
     <img class="w3-image" src="img/cover/join_pro_team_min.jpg" alt="Architecture" width="1500" height="400">
@@ -478,8 +544,11 @@
     </div>
   </div> -->
 
+    <!--w3 js footer -->
+    <div w3-include-html="footer.html"></div>
 
 <!-- Footer -->
+<!--
 <footer class="w3-center w3-black w3-padding-16">
   <img class="w3-padding-16" src="img/white-cag-logo-no-bk.png" width="400px" />
   <p>
@@ -500,7 +569,78 @@
   <p>Copyright © 2017 </p>
   <p class="w3-tiny">Proudly developed by <a href="#" target="_blank">Arkar</a></p>
 </footer>
+-->
 
+    
+    
+    <!--facebook page chat js-->
+    <!--<style>.fb-livechat,.fb-widget{display:none}.ctrlq.fb-button,.ctrlq.fb-close{position:fixed;right:24px;cursor:pointer}.ctrlq.fb-button{z-index:1;background:url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/PjwhRE9DVFlQRSBzdmcgIFBVQkxJQyAnLS8vVzNDLy9EVEQgU1ZHIDEuMS8vRU4nICAnaHR0cDovL3d3dy53My5vcmcvR3JhcGhpY3MvU1ZHLzEuMS9EVEQvc3ZnMTEuZHRkJz48c3ZnIGVuYWJsZS1iYWNrZ3JvdW5kPSJuZXcgMCAwIDEyOCAxMjgiIGhlaWdodD0iMTI4cHgiIGlkPSJMYXllcl8xIiB2ZXJzaW9uPSIxLjEiIHZpZXdCb3g9IjAgMCAxMjggMTI4IiB3aWR0aD0iMTI4cHgiIHhtbDpzcGFjZT0icHJlc2VydmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiPjxnPjxyZWN0IGZpbGw9IiMwMDg0RkYiIGhlaWdodD0iMTI4IiB3aWR0aD0iMTI4Ii8+PC9nPjxwYXRoIGQ9Ik02NCwxNy41MzFjLTI1LjQwNSwwLTQ2LDE5LjI1OS00Niw0My4wMTVjMCwxMy41MTUsNi42NjUsMjUuNTc0LDE3LjA4OSwzMy40NnYxNi40NjIgIGwxNS42OTgtOC43MDdjNC4xODYsMS4xNzEsOC42MjEsMS44LDEzLjIxMywxLjhjMjUuNDA1LDAsNDYtMTkuMjU4LDQ2LTQzLjAxNUMxMTAsMzYuNzksODkuNDA1LDE3LjUzMSw2NCwxNy41MzF6IE02OC44NDUsNzUuMjE0ICBMNTYuOTQ3LDYyLjg1NUwzNC4wMzUsNzUuNTI0bDI1LjEyLTI2LjY1N2wxMS44OTgsMTIuMzU5bDIyLjkxLTEyLjY3TDY4Ljg0NSw3NS4yMTR6IiBmaWxsPSIjRkZGRkZGIiBpZD0iQnViYmxlX1NoYXBlIi8+PC9zdmc+) center no-repeat #0084ff;width:60px;height:60px;text-align:center;bottom:24px;border:0;outline:0;border-radius:60px;-webkit-border-radius:60px;-moz-border-radius:60px;-ms-border-radius:60px;-o-border-radius:60px;box-shadow:0 1px 6px rgba(0,0,0,.06),0 2px 32px rgba(0,0,0,.16);-webkit-transition:box-shadow .2s ease;background-size:80%;transition:all .2s ease-in-out}.ctrlq.fb-button:focus,.ctrlq.fb-button:hover{transform:scale(1.1);box-shadow:0 2px 8px rgba(0,0,0,.09),0 4px 40px rgba(0,0,0,.24)}.fb-widget{background:#fff;z-index:2;position:fixed;width:360px;height:435px;overflow:hidden;opacity:0;bottom:0;right:24px;border-radius:6px;-o-border-radius:6px;-webkit-border-radius:6px;box-shadow:0 5px 40px rgba(0,0,0,.16);-webkit-box-shadow:0 5px 40px rgba(0,0,0,.16);-moz-box-shadow:0 5px 40px rgba(0,0,0,.16);-o-box-shadow:0 5px 40px rgba(0,0,0,.16)}.fb-credit{text-align:center;margin-top:8px}.fb-credit a{transition:none;color:#bec2c9;font-family:Helvetica,Arial,sans-serif;font-size:12px;text-decoration:none;border:0;font-weight:400}.ctrlq.fb-overlay{z-index:0;position:fixed;height:100vh;width:100vw;-webkit-transition:opacity .4s,visibility .4s;transition:opacity .4s,visibility .4s;top:0;left:0;background:rgba(0,0,0,.05);display:none}.ctrlq.fb-close{z-index:4;padding:0 6px;background:#365899;font-weight:700;font-size:11px;color:#fff;margin:8px;border-radius:3px}.ctrlq.fb-close::after{content:'x';font-family:sans-serif}</style>-->
+
+    <div class="fb-livechat w3-hide-small">
+        <div class="ctrlq fb-overlay"></div>
+        <div class="fb-widget w3-hide-small">
+            <div class="ctrlq fb-close"></div>
+
+            <!--  mobbile    -->
+            <div class="fb-page w3-hide-large w3-hide-medium" data-href="https://www.facebook.com/cagengineering/" data-tabs="messages" data-width="300" data-height="400" data-small-header="true" data-hide-cover="true" data-show-facepile="false">
+                <blockquote cite="https://www.facebook.com/cagengineering/" class="fb-xfbml-parse-ignore"> </blockquote>
+            </div>
+
+            <!--  desktop and tablet  -->
+            <div class="fb-page w3-hide-small" data-href="https://www.facebook.com/cagengineering/" data-tabs="messages" data-width="360" data-height="400" data-small-header="true" data-hide-cover="true" data-show-facepile="false">
+                <blockquote cite="https://www.facebook.com/cagengineering/" class="fb-xfbml-parse-ignore"> </blockquote>
+            </div>
+
+            <div class="fb-credit">
+                <a href="https://www.labnol.org/software/facebook-messenger-chat-widget/9583/" target="_blank">Facebook Chat Widget by Digital Inspiration</a>
+            </div>
+            <div id="fb-root"></div>
+        </div>
+        <a href="https://m.me/cagengineering" title="Send us a message on Facebook" class="ctrlq fb-button"></a>
+    </div>
+
+    <!--  fb chat button for mobile  -->
+    <div class="w3-bottom w3-hide-large w3-hide-medium w3-padding">
+        <a class="w3-buuton w3-white w3-xlarge w3-right w3-padding" href="https://m.me/cagengineering">
+        <img src="img/logo/facebook-messenger.svg" style="width: 35px; height: 35px;" />
+    </a>
+    </div>
+    
+    
+    <script src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.9"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            var t = {
+                delay: 125,
+                overlay: $(".fb-overlay"),
+                widget: $(".fb-widget"),
+                button: $(".fb-button")
+            };
+            setTimeout(function() {
+                $("div.fb-livechat").fadeIn()
+            }, 8 * t.delay), $(".ctrlq").on("click", function(e) {
+                e.preventDefault(), t.overlay.is(":visible") ? (t.overlay.fadeOut(t.delay), t.widget.stop().animate({
+                    bottom: 0,
+                    opacity: 0
+                }, 2 * t.delay, function() {
+                    $(this).hide("slow"), t.button.show()
+                })) : t.button.fadeOut("medium", function() {
+                    t.widget.stop().show().animate({
+                        bottom: "30px",
+                        opacity: 1
+                    }, 2 * t.delay), t.overlay.fadeIn(t.delay)
+                })
+            })
+        });
+    </script>
+
+    <!-- End facebook page chat js-->
+    
+    <script>
+        w3.includeHTML();
+    </script>
+    
 <!-- Add Google Maps -->
 <script>
 function myMap()
