@@ -1,0 +1,812 @@
+<!DOCTYPE html>
+<html>
+<title>Intrusion Detection System | CAG Engineering</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link href="https://fonts.googleapis.com/css?family=Encode+Sans+Expanded:500" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<!-- favicon insert -->
+<link rel="apple-touch-icon" sizes="180x180" href="img/favicons/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="img/favicons/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="img/favicons/favicon-16x16.png">
+<link rel="manifest" href="img/favicons/manifest.json">
+<link rel="mask-icon" href="img/favicons/safari-pinned-tab.svg" color="#5bbad5">
+<meta name="theme-color" content="#ffffff">
+
+
+
+<style>
+    *,
+    h1,
+    p {
+        font-family: 'Encode Sans Expanded', sans-serif;
+    }
+
+    .fa-anchor,
+    .fa-coffee {
+        font-size: 200px
+    }
+
+    .material-icons {
+        vertical-align: -14%;
+        font-size: 25px;
+    }
+</style>
+
+<body>
+
+    <!-- Navbar (sit on top) -->
+    <div class="w3-top">
+        <div class="w3-bar w3-white w3-wide w3-padding w3-card-2">
+            <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="mobileNav()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+            <a href="#home" class="w3-bar-item w3-button"><b class="w3-text-green">CAG</b> Engineering</a>
+            <!-- Float links to the right. Hide them on small screens -->
+            <div class="w3-right w3-hide-small">
+                <a href="#projects" class="w3-bar-item w3-button">Home</a>
+                <a href="#projects" class="w3-bar-item w3-button w3-green">Solutions</a>
+                <!-- <a href="#projects" class="w3-bar-item w3-button">Services</a> -->
+                <!-- <a href="#projects" class="w3-bar-item w3-button">Products</a> -->
+                <a href="#projects" class="w3-bar-item w3-button">Projects</a>
+                <a href="#about" class="w3-bar-item w3-button">About</a>
+                <a href="#contact" class="w3-bar-item w3-button">Contact</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navbar on small screens -->
+    <div id="navDemo" class="w3-bar-block w3-light-grey w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:60px">
+        <a href="#band" class="w3-bar-item w3-button w3-padding-large">Home</a>
+        <a href="#tour" class="w3-bar-item w3-button w3-padding-large w3-green">Solutions</a>
+        <a href="#contact" class="w3-bar-item w3-button w3-padding-large">Projects</a>
+        <a href="#" class="w3-bar-item w3-button w3-padding-large">About</a>
+        <a href="#" class="w3-bar-item w3-button w3-padding-large">Contact</a>
+    </div>
+
+    <!-- Header -->
+    <header class="w3-display-container w3-content w3-wide" style="max-width:1500px;" id="home">
+        <!-- Large Screen Image -->
+        <img class=" w3-hide-small" src="img/cover/ids-min-desktop.jpg" alt="Architecture" style="width: 100%;">
+        <!-- Small Screen Image -->
+        <img class="w3-image w3-hide-large w3-hide-medium" src="img/cover/ids-min-mobile.jpg" alt="Architecture" width="1500" style="height:100%">
+        <!-- Large Screen Cover Text -->
+        <div class="w3-display-middle w3-margin-top w3-black w3-opacity-min w3-center w3-hide-small">
+            <h1 class="w3-jumbo"><span class="w3-padding w3-text-green"><b>Intrusion Detection System</b></span></h1>
+        </div>
+        <!-- Small Screen Cover Text -->
+        <div class="w3-display-middle w3-margin-top w3-black w3-opacity-min w3-center w3-hide-large">
+            <h1 class="w3-xxlarge w3-center"><span class=" w3-text-green"><b>Intrusion Detection System</b></span></h1>
+        </div>
+        <!-- Large Screen Path Text -->
+        <div class="w3-display-bottommiddle w3-container w3-padding w3-hide-small">
+            <p style="text-shadow:1px 1px 0 #444" class="w3-text-white w3-large">
+                <a href="#">Home</a> /
+                <a href="#">Solution</a> /
+                <a href="#">Intrusion Detection System</a>
+            </p>
+        </div>
+        <!-- Small Screen Path Text -->
+        <div class="w3-display-bottomleft w3-container w3-padding w3-hide-large w3-hide-medium">
+            <p style="text-shadow:1px 1px 0 #444" class="w3-text-white w3-large">
+                <a href="#">Home</a> /
+                <a href="#">Solution</a> /
+                <a href="#">Intrusion Detection System</a>
+            </p>
+        </div>
+    </header>
+
+
+
+
+    <!-- Introduction of Intrusion Detection System  -->
+    <div class="w3-row-padding w3-padding-64 w3-container" style="max-width:1564px">
+        <div class="w3-content">
+            <!-- w3-content -->
+            <div class="w3-row">
+                <div class="w3-col s12">
+                    <h1 class="w3-text-green">Intrusion Detection System</h1>
+                    <p class="w3-text-grey w3-large">
+                        CAG’s Secure Fence is the ultimate fiber optic perimeter intrusion detection and location system, with proven reliability confirmed over 15 years of operation, including use in many of the world’s harshest environments.
+                    </p>
+                    
+                    <p class="w3-text-grey w3-large">
+                        Fiber optic sensors can be mounted on the fence to detect climbing or cutting, or buried along the fence to detect digging.
+                    </p>
+                    
+                    <p class="w3-text-grey w3-large">
+                        The simple installation, reliability and maintenance free operation delivers the lowest Total Cost of Ownership (TCO) of any long perimeter solution in the market.
+                    </p>
+                    
+                    <p class="w3-text-grey w3-large">
+                        With CAG’s Secure Fence™ system, you can detect and locate intrusions on perimeters and borders that were, until now, always thought to be too expensive to protect.
+                    </p>
+                    
+                    <p class="w3-text-grey w3-large">
+                        The low cost fiber optic sensor cable is easily attached to the fence, pinpointing the location of fence climbing, lifting or cutting to within 10 meters (30 feet) to 25 meters (80 feet) or better for fences of up to 80km (50 miles) in length.
+                    </p>
+                    
+                    <p class="w3-text-grey w3-large">
+                        CAG’s industry leading advanced signal processing minimizes nuisance alarms, without compromising intrusion detection sensitivity
+                    </p>
+                    
+                </div>
+
+                <div class="w3-col s12">
+
+                    <img class="w3-padding w3-image" src="img/solution/ids/ids1-min.jpg" alt="CAG Engineering Logo">
+
+                </div>
+            </div>            
+        </div>
+    </div>
+
+
+    <!-- Water Treatment Each Category -->
+
+    <div class="w3-container w3-content w3-margin-bottom">
+        <h1 class="w3-text-green">How it's work</h1>
+        
+        <p class="w3-text-grey w3-large">
+            Simple to install and operate, the CAG Secure Fence system delivers truly outstanding levels of detection and location combined with one of the lowest Nuisance Alarm Rates available. It is maintenance free; operating easily and reliably under a wide range of operational and environmental conditions—day after day, year after year. Secure Fence controllers are connected to fiber optic cables that are mounted on fences and gates to detect climbing, cutting or lifting, or buried along fence-lines to detect digging.
+        </p>
+        
+        <p class="w3-text-grey w3-large">
+            Each controller transmits laser light down fiber optic sensing cable and then monitors and analyses disturbances in returning light to detect the nature and location of intrusion alarms. At the heart of the system is the intelligence built into the CAG Secure Fence controller. The controller uses advanced signal processing techniques in parallel with intrusion detection to identify and ignore environmental and other unwanted nuisance alarms.
+        </p>
+
+        <div class="w3-row">
+            <a href="javascript:void(0)" onclick="openCity(event, 'work1');">
+                <div class="w3-half tablink w3-bottombar w3-hover-light-grey w3-padding w3-border-black">From intrusion to detection to location</div>
+            </a>
+            <a href="javascript:void(0)" onclick="openCity(event, 'work2');">
+                <div class="w3-half tablink w3-bottombar w3-hover-light-grey w3-padding">Intrusion detection, location and focused response</div>
+            </a>            
+        </div>
+
+        <div id="work1" class="w3-container city">
+            <h2 class="w3-text-green">From intrusion to detection to location</h2>
+            
+            <div class="w3-center">
+                <img src="img/solution/ids/ids2.png" class="w3-image w3-padding w3-card" />
+            </div>
+            
+            <p class="w3-text-grey w3-large">
+                Connecting Secure Fence to CAG CAMS™ enables the location of intrusion alarms to be displayed on an intuitive map-based user interface. CAG CAMS can also be used to interface CAG Secure Fence to security cameras, lighting, mobile devices, emails, text messages and more than 40 different security management systems and other security devices.
+            </p>
+                                                    
+        </div>
+        
+
+        <div id="work2" class="w3-container city" style="display:none">
+            <h2 class="w3-text-green">Intrusion detection, location and focused responses</h2>
+            <div class="w3-center">
+                <img src="img/solution/ids/ids3.png" class="w3-image w3-padding w3-card" />
+            </div>                                                
+        </div>        
+    </div>
+    
+    <!-- section 2 -->
+    <div class="w3-container w3-padding-64 w3-light-grey">
+        <div class="w3-content">
+            <h1 class="w3-text-green">Fence Mounted Intrusion Detection</h1>
+            <h2 class="w3-text-green">Sensor : Fiber Optic Cable attached to the Fence</h2>
+            
+            <div class="w3-row-padding w3-padding-32">
+                <div class="w3-half">
+                    <div class=" w3-card w3-margin-top">
+                        <img src="img/solution/ids/ids4-min.jpg" style="width: 100%;" />
+                        <div class=" w3-green w3-padding w3-center w3-large w3-container">
+                            Detecting climbing (fence and ladder)
+                        </div>
+                    </div>                    
+                </div>
+                
+                <div class="w3-half">
+                    
+                    <div class="w3-row w3-card w3-margin-top">
+                        <img src="img/solution/ids/ids5-min.jpg" style="width: 100%;" />
+                        <div class="w3-green w3-padding w3-large w3-center w3-container">
+                            Detecting cutting and lifting
+                        </div>
+                    </div>
+                    
+                    <div class="w3-row w3-card w3-margin-top">
+                        <img src="img/solution/ids/ids6-min.jpg" style="width: 100%;" />
+                        <div class="w3-green w3-padding w3-large w3-center w3-container">
+                            Activating lighting and directing cameras
+                        </div>
+                    </div>
+                    
+                    <div class="w3-row w3-card w3-margin-top">
+                        <a href="#" class="w3-button w3-black">
+                            <img src="img/white-cag-logo-no-bk.png" style="width: 100%;" />
+                            <div class="w3-green w3-padding w3-large w3-center w3-container">
+                                Order this solution now!
+                            </div>
+                        </a>                        
+                    </div>
+                    
+                </div>
+            </div>
+            
+            <div class="w3-row w3-white w3-card w3-padding w3-center">
+                <h2 class="w3-text-green">Powerful Technology But as simple as a cable on a fence</h2>                                                
+            </div>
+            
+            <div class="w3-row w3-white  w3-card">
+                <div class="w3-display-container">
+                    <img src="img/solution/ids/ids7-min.jpg" style="width: 100%;" />
+                    <div class="w3-display-topleft w3-container w3-green w3-opacity">
+                        <p class="w3-text-white w3-medimun"><b>Rapidly installed</b> (zip tie cable to fence)</p>
+                        <p class="w3-text-white w3-large">Reliably detects intruders even in extreme weather conditions</p>
+                    </div>
+                </div>
+                <p class=" w3-padding">
+                    Papua New Guinea: Confidently detecting intruders in torrential rain <br/>
+                    (100mm / 4 inches of rain per hour )
+                </p>
+            </div>
+            
+            
+        </div>
+    </div>
+    
+    <!--Section 3-->
+    <div class="w3-container w3-white w3-padding-64">
+        <div class="w3-content">
+            <!-- sub section 1 -->
+            <div class="w3-padding-32">
+                <h1 class="w3-text-green">
+                    Integration Detection with Response
+                </h1>
+
+                <div class="w3-center w3-card w3-margin">
+                    <img src="img/solution/ids/ids8-min.jpg" class="w3-image" />
+                </div>
+            </div>
+            
+            <!-- sub section 2 -->
+            <div class="w3-padding-32">
+                <h1 class="w3-text-green">
+                    CAG’s FFT Central Alarms Monitoring System
+                </h1>
+                <p class="w3-text-grey w3-large">
+                    Connects to location map displays, perimeter lighting and cameras for rapid action
+                </p>
+                <p class="w3-text-grey w3-large">
+                    Integrates to > 40 security, video and access control management systems
+                </p>
+                <div class="w3-center w3-margin">
+                    <img src="img/solution/ids/ids9-min.jpg" class="w3-image w3-padding w3-card"/>
+                </div>
+            </div>
+            
+            <!-- sub section 3 -->
+            <div class="w3-padding-32">
+                <h1 class="w3-text-green">
+                    CAG’s FFT AURA
+                </h1>
+                <p class="w3-text-grey w3-large">
+                    Industry leading intrusion location - with 1500 measurement points/km
+                </p>
+                
+                <div class="w3-row">
+                    <div class="w3-col l4 s12">
+                        <p class="w3-text-green w3-large">
+                            General
+                        </p>
+                    </div>
+                    <div class="w3-col l4 s12">
+                        <p>Intrusion location to within +/- 6m</p>
+                        <p>System redundancy with cut resilience</p>
+                        <p>18km to 40km maximum cable length</p>
+                    </div>
+                    <div class="w3-col l4 s12">
+                        <img src="img/solution/ids/ids10.png" class="w3-image" />
+                    </div>
+                </div>
+                
+                <div class="w3-row">
+                    <div class="w3-col l4 s12">
+                        <p class="w3-text-green w3-large">
+                            Fence Perimeters
+                        </p>
+                    </div>
+                    <div class="w3-col l4 s12">
+                        <p>Ultra-high security applications</p>                        
+                    </div>                    
+                </div>
+                
+                <div class="w3-row">
+                    <div class="w3-col l4 s12">
+                        <p class="w3-text-green w3-large">
+                            Buried Perimeters/Pipeline
+                        </p>
+                    </div>
+                    <div class="w3-col l4 s12">
+                        <p>Detects walking/crawling, digging, tapping and interference</p>                        
+                    </div>                    
+                </div>
+                
+                <div class="w3-row">
+                    <div class="w3-col l4 s12">
+                        <p class="w3-text-green w3-large">
+                            Network
+                        </p>
+                    </div>
+                    <div class="w3-col l4 s12">
+                        <p>Detects and pinpoints cable sheath cutting and movement</p>
+                        <p>Uses only a single fibre inside the data cable</p>
+                    </div>                    
+                </div>
+                
+                <div class="w3-row-padding">
+                    <div class="w3-col l4 s12 w3-margin-top">
+                        <div class="w3-card">
+                            <img src="img/solution/ids/ids11.png" style="width: 100%;" />
+                            <div class="w3-container">
+                                <p class="w3-text-green">
+                                  Military sites and intelligence agencies
+                                </p>
+                            </div>
+                        </div>                        
+                    </div>
+                    
+                    <div class="w3-col l4 s12 w3-margin-top">
+                        <div class="w3-card">
+                            <img src="img/solution/ids/ids12.png" style="width: 100%;" />
+                            <div class="w3-container">
+                                <p class="w3-text-green">
+                                    Correction facilities
+                                </p>
+                            </div>
+                        </div>                        
+                    </div>
+                    
+                    <div class="w3-col l4 s12 w3-margin-top">
+                        <div class="w3-card">
+                            <img src="img/solution/ids/ids13.png" style="width: 100%;" />
+                            <div class="w3-container">
+                                <p class="w3-text-green">
+                                    Oil and gas, high risk sites
+                                </p>
+                            </div>
+                        </div>                        
+                    </div>
+                    
+                </div>
+                
+            </div>
+            
+            <!-- sub section 4 -->
+            <div class="w3-padding-32">
+                <h1 class="w3-text-green">
+                    CAG’s FFT SECURE FENCE & SECURE FENCE 408
+                </h1>
+                <p class="w3-text-grey w3-large">
+                    Cost Effective Intrusion Location
+                </p>
+                
+                <div class="w3-row">
+                    <div class="w3-col l4 s12">
+                        <p class="w3-text-green w3-large">
+                            General
+                        </p>
+                    </div>
+                    <div class="w3-col l4 s12">
+                        <p>
+                            Microstrain Technology
+                        </p>
+                        <p>
+                            Secure Fence has pinpoint intrusion location
+                        </p>
+                        <p>
+                            Secure Fence 408 has hardware zones
+                        </p>
+                        <p>
+                            Long distance capabilities
+                        </p>
+                        <p>
+                            Insensitive lead-in cable
+                        </p>
+                    </div>
+                    <div class="w3-col l4 s12">
+                        <img src="img/solution/ids/ids14.png" class="w3-image" />
+                    </div>
+                </div>
+                
+                <div class="w3-row">
+                    <div class="w3-col l4 s12">
+                        <p class="w3-text-green w3-large">
+                            Fence Perimeters
+                        </p>
+                    </div>
+                    <div class="w3-col l4 s12">
+                        <p>
+                            Detects and pinpoints cable sheath cutting and movement
+                        </p>
+                        <p>
+                            Uses only a single fibre inside the data cable
+                        </p>
+                    </div>                    
+                </div>
+                                                                
+                
+                <div class="w3-row-padding">
+                    <div class="w3-col l6 s12 w3-margin-top">
+                        <div class="w3-card">
+                            <img src="img/solution/ids/ids15-min.jpg" class="w3-image" />
+                        </div>                        
+                    </div>
+                    
+                    <div class="w3-col l6 s12 w3-margin-top">
+                        <div class="w3-card">
+                            <img src="img/solution/ids/ids16-min.jpg" class="w3-image" />
+                        </div>                        
+                    </div>                                        
+                    
+                </div>
+                
+            </div>
+            
+            <!-- sub section 5 -->
+            <div class="w3-padding-32">
+                <h1 class="w3-text-green">
+                    CAG’s FFT SECURE FENCE & SECURE FENCE 408
+                </h1>
+                <p class="w3-text-grey w3-large">
+                    Cost Effective Intrusion Location
+                </p>
+                
+                <div class="w3-row">
+                    <div class="w3-col l4 s12">
+                        <p class="w3-text-green w3-large">
+                            General
+                        </p>
+                    </div>
+                    <div class="w3-col l4 s12">
+                        <p>
+                            Zone detection, two zones per controller
+                        </p>
+                        <p>
+                            1.6km maximum cable length per zone
+                        </p>
+                        <p>
+                            10km maximum lead-in (insensitive) cable
+                        </p>                        
+                    </div>
+                    <div class="w3-col l4 s12">
+                        <img src="img/solution/ids/ids17.png" class="w3-image" />
+                    </div>
+                </div>
+                
+                <div class="w3-row">
+                    <div class="w3-col l4 s12">
+                        <p class="w3-text-green w3-large">
+                            Fence Perimeters
+                        </p>
+                    </div>
+                    <div class="w3-col l4 s12">
+                        <p>
+                            Ideal for gates and shorter fences
+                        </p>                        
+                    </div>                    
+                </div>
+                
+                <div class="w3-row">
+                    <div class="w3-col l4 s12">
+                        <p class="w3-text-green w3-large">
+                            Buried Perimeters And Pipeline
+                        </p>
+                    </div>
+                    <div class="w3-col l4 s12">
+                        <p>
+                            Detects digging close to the panel
+                        </p>
+                        <p>
+                            Protects valve and pump station perimeters
+                        </p>
+                    </div>                    
+                </div>
+                
+                <div class="w3-row">
+                    <div class="w3-col l4 s12">
+                        <p class="w3-text-green w3-large">
+                            Network
+                        </p>
+                    </div>
+                    <div class="w3-col l4 s12">
+                        <p>
+                            Detects cable sheath cutting and movement within a zone
+                        </p>
+                        <p>
+                            Applied inside buildings and between adjacent facilities
+                        </p>
+                    </div>                    
+                </div>
+                
+                                                                
+                
+                <div class="w3-row-padding">
+                    <div class="w3-col l4 s12 w3-margin-top">
+                        <div class="w3-card">
+                            <img src="img/solution/ids/ids18.png" style="width: 100%;" />
+                            <div class="w3-container">
+                                <p class="w3-text-green">
+                                    Small sites including substations, towers
+                                </p>
+                            </div>
+                        </div>                        
+                    </div>
+                    
+                    <div class="w3-col l4 s12 w3-margin-top">
+                        <div class="w3-card">
+                            <img src="img/solution/ids/ids19.png" style="width: 100%;" />
+                            <div class="w3-container">
+                                <p class="w3-text-green">
+                                    Small sites including substations, towers
+                                </p>
+                            </div>
+                        </div>                        
+                    </div>
+                    
+                    <div class="w3-col l4 s12 w3-margin-top">
+                        <div class="w3-card">
+                            <img src="img/solution/ids/ids20.png" style="width: 100%;" />
+                            <div class="w3-container">
+                                <p class="w3-text-green">
+                                    Gates and networks inside buildings
+                                </p>
+                            </div>
+                        </div>                        
+                    </div>                    
+                </div>
+                
+                <p class="w3-text-green w3-large">
+                    Value Proposition 
+                    <span class="w3-text-grey">
+                        – CAG Secure Fence delivers outstanding price and performance benefits.
+                    </span>
+                </p>
+                
+                <p class="w3-text-green w3-large">
+                    Technology
+                    <span class="w3-text-grey">
+                        – CAG’s R&D and product development programs ensure you always have the very latest and most powerful technology, and systems are easily updated with the latest algorithms and signatures.
+                    </span>
+                </p>
+                
+                <p class="w3-text-green w3-large">
+                    The Right Products
+                    <span class="w3-text-grey">
+                        – Developed by CAG specifically for both military and industrial applications.
+                    </span>
+                </p>
+                
+            </div>
+            
+            <!-- sub section 6 -->
+            <div class="w3-padding-32">
+                <h1 class="w3-text-green">
+                    CAG’s State-of-the-Art Solution
+                </h1>                
+                
+                <div class="w3-row">
+                    <div class="w3-col l6 s12">
+                        <h2 class="w3-text-grey">
+                            What Constitute to an Ideal Surveillance Solution?
+                        </h2>                        
+                        
+                        <ul>
+                            <li>
+                                24/7 and all weather Surveillance
+                            </li>
+                            <li>
+                                Detecting small target at further range
+                            </li>
+                            <li>
+                                Long Tracking Life
+                            </li>
+                            <li>
+                                Low False Alarm
+                            </li>
+                            <li>
+                                Identifying Target
+                            </li>
+                            <li>
+                                Enforcement
+                            </li>
+                        </ul>
+                        
+                    </div>
+                    
+                    <div class="w3-col l6 s12">
+                        <p class="w3-text-grey w3-large">
+                            With more than 1,000 intrusion detection systems located around the world, including some of the most hostile environments on the planet, CAG has the proven real-world experience to deliver highly reliable yet cost effective intrusion detection and location solutions.
+                        </p>
+                        <p class="w3-text-grey w3-large">
+                            CAG’s Future Fibre Technologies’ business is totally focused on the security industry.
+                        </p>
+                        <p class="w3-text-grey w3-large">
+                            CAG’s FFT is the world leader in fiber optic intrusion detection systems and development of fiber optic sensing technologies for perimeter intrusion detection, network protection, and buried pipeline monitoring for third  party interference.
+                        </p>
+                    </div>
+                        
+                </div>
+                
+            </div>
+                
+                
+            
+            
+        </div>        
+    </div>
+
+
+    <!-- Other CAG Provided Solutions -->
+    <button onclick="myFunction('Demo3')" class="w3-button w3-block w3-green">
+  <!-- Large Screen btn -->
+  <h3 class="w3-hide-small">Other Solutions of CAG Engineering</h3>
+  <!-- small screen btn -->
+  <h3 class="w3-hide-large w3-hide-medium w3-large">Other Solutions of CAG Engineering</h3>
+</button>
+
+    <div id="Demo3" class="w3-hide w3-container w3-center w3-pale-green">
+        <p>
+            <a href="#">Water Treatment System</a>
+        </p>
+
+        <p>
+            <a href="#">Waste Water Treatment System</a>
+        </p>
+
+        <p>
+            <a href="#">Industrial Chemicals Supply</a>
+        </p>
+
+        <p>
+            <a href="#">Building Automation System</a>
+        </p>
+
+        <p>
+            <a href="#">Filtration System</a>
+        </p>
+
+        <p>
+            <a href="#">Air Cooled Chiller</a>
+        </p>
+
+        <p>
+            <a href="#">Automatic​ Car Washing System</a>
+        </p>
+
+        <p>
+            <a href="#">Intrusion​ ​ Detection​ ​ System</a>
+        </p>
+
+        <p>
+            <a href="#">Biological Membrane Tank System</a>
+        </p>
+
+    </div>
+
+    <!-- Join Pro Team Section -->
+    <section class="w3-display-container w3-opacity-min" style="min-height:400px; background-attachment: fixed;background-position: center;background-repeat: no-repeat;background-size: cover;background-image: url('img/cover/join_pro_team_min.jpg');">
+        <div class="w3-display-middle w3-black w3-padding-large w3-button">
+            <!-- large screen btn -->
+            <h2 class="w3-hide-small">Discuss Your Requirments with Our Professional Team</h2>
+            <!-- small screen btn -->
+            <h2 class="w3-hide-large w3-hide-medium w3-xlarge">Discuss Your Requirments <br/> with Our Professional Team</h2>
+        </div>
+    </section>
+
+    <!-- <div class="w3-display-container w3-content w3-wide" style="max-width:1500px;" id="home">
+    <img class="w3-image" src="img/cover/join_pro_team_min.jpg" alt="Architecture" width="1500" height="400">
+    <div class="w3-display-middle w3-margin-top w3-center">
+      <h1 class="w3-jumbo"><span class="w3-padding w3-black w3-text-green w3-opacity-min"><b>About Us</b></span></h1>
+    </div>
+    <div class="w3-display-bottommiddle w3-container w3-padding">
+      <p style="text-shadow:1px 1px 0 #444" class="w3-text-white w3-large">
+          <a href="#">Home</a> / 
+          <a href="#">About Us</a>
+      </p>
+    </div>
+  </div> -->
+
+
+    <!-- Footer -->
+    <footer class="w3-center w3-black w3-padding-16">
+        <img class="w3-padding-16" src="img/white-cag-logo-no-bk.png" width="400px" style="max-width:300px;" />
+        <p>
+            <a href="#">Home</a> |
+            <a href="#">Services</a> |
+            <a href="#">Products</a> |
+            <a href="#">Projects</a> |
+            <a href="#">About Us</a> |
+            <a href="#">Contact</a>
+        </p>
+        <p>
+            <button class="w3-button w3-border w3-hover-green"><i class="fa fa-facebook"></i></button>
+            <button class="w3-button w3-border w3-hover-green"><i class="fa fa-youtube-play"></i></button>
+            <button class="w3-button w3-border w3-hover-green"><i class="fa fa-google-plus"></i></button>
+            <button class="w3-button w3-border w3-hover-green"><i class="fa fa-twitter"></i></button>
+            <button class="w3-button w3-border w3-hover-green"><i class="fa fa-linkedin"></i></button>
+        </p>
+        <p>Copyright © 2017 </p>
+        <p class="w3-tiny">Proudly developed by <a href="#" target="_blank">Arkar</a></p>
+    </footer>
+
+
+
+    <script>
+        // Used to toggle the menu on small screens when clicking on the menu button
+        function mobileNav() {
+            var x = document.getElementById("navDemo");
+            if (x.className.indexOf("w3-show") == -1) {
+                x.className += " w3-show";
+            } else {
+                x.className = x.className.replace(" w3-show", "");
+            }
+        }
+    </script>
+
+    <!-- Add Other CAG Provided Solutions -->
+    <script>
+        function myFunction(id) {
+            var x = document.getElementById(id);
+            if (x.className.indexOf("w3-show") == -1) {
+                x.className += " w3-show";
+            } else {
+                x.className = x.className.replace(" w3-show", "");
+            }
+        }
+    </script>
+
+
+    <!-- Add Water Treatment Cateogry -->
+
+    <script>
+        function openCity(evt, cityName) {
+            var i, x, tablinks;
+            x = document.getElementsByClassName("city");
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+            tablinks = document.getElementsByClassName("tablink");
+            for (i = 0; i < x.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" w3-border-black", "");
+            }
+            document.getElementById(cityName).style.display = "block";
+            evt.currentTarget.firstElementChild.className += " w3-border-black";
+        }
+    </script>
+
+    <!-- Add Google Maps -->
+    <script>
+        function myMap() {
+            myCenter = new google.maps.LatLng(16.833762, 96.169509);
+            var mapOptions = {
+                center: myCenter,
+                zoom: 15,
+                scrollwheel: false,
+                draggable: false,
+                mapTypeId: google.maps.MapTypeId.ROADMAP
+            };
+            var map = new google.maps.Map(document.getElementById("googleMap"), mapOptions);
+
+            var marker = new google.maps.Marker({
+                position: myCenter,
+            });
+            marker.setMap(map);
+        }
+    </script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBuSr5a5KMyK3Y3k2iYryUhd2wf3H-aN7A&callback=myMap"></script>
+    <!--
+To use this code on your website, get a free API key from Google.
+Read more at: https://www.w3schools.com/graphics/google_maps_basic.asp
+-->
+
+</body>
+
+</html>
