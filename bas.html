@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html>
+<title>Building Automation System | CAG Engineering</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link href="https://fonts.googleapis.com/css?family=Encode+Sans+Expanded:500" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<!-- favicon insert -->
+<link rel="apple-touch-icon" sizes="180x180" href="img/favicons/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="img/favicons/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="img/favicons/favicon-16x16.png">
+<link rel="manifest" href="img/favicons/manifest.json">
+<link rel="mask-icon" href="img/favicons/safari-pinned-tab.svg" color="#5bbad5">
+<meta name="theme-color" content="#ffffff">
+
+
+
+<style>
+    *,
+    h1,
+    p {
+        font-family: 'Encode Sans Expanded', sans-serif;
+    }
+
+    .fa-anchor,
+    .fa-coffee {
+        font-size: 200px
+    }
+
+    .material-icons {
+        vertical-align: -14%;
+        font-size: 25px;
+    }
+</style>
+
+<body>
+
+    <!-- Navbar (sit on top) -->
+    <div class="w3-top">
+        <div class="w3-bar w3-white w3-wide w3-padding w3-card-2">
+            <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="mobileNav()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+            <a href="#home" class="w3-bar-item w3-button"><b class="w3-text-green">CAG</b> Engineering</a>
+            <!-- Float links to the right. Hide them on small screens -->
+            <div class="w3-right w3-hide-small">
+                <a href="#projects" class="w3-bar-item w3-button">Home</a>
+                <a href="#projects" class="w3-bar-item w3-button w3-green">Solutions</a>
+                <!-- <a href="#projects" class="w3-bar-item w3-button">Services</a> -->
+                <!-- <a href="#projects" class="w3-bar-item w3-button">Products</a> -->
+                <a href="#projects" class="w3-bar-item w3-button">Projects</a>
+                <a href="#about" class="w3-bar-item w3-button">About</a>
+                <a href="#contact" class="w3-bar-item w3-button">Contact</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navbar on small screens -->
+    <div id="navDemo" class="w3-bar-block w3-light-grey w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:60px">
+        <a href="#band" class="w3-bar-item w3-button w3-padding-large">Home</a>
+        <a href="#tour" class="w3-bar-item w3-button w3-padding-large w3-green">Solutions</a>
+        <a href="#contact" class="w3-bar-item w3-button w3-padding-large">Projects</a>
+        <a href="#" class="w3-bar-item w3-button w3-padding-large">About</a>
+        <a href="#" class="w3-bar-item w3-button w3-padding-large">Contact</a>
+    </div>
+
+    <!-- Header -->
+    <header class="w3-display-container w3-content w3-wide" style="max-width:1500px;" id="home">
+        <!-- Large Screen Image -->
+        <img class=" w3-hide-small" src="img/cover/bas-desktop-min.jpg" alt="Architecture" style="width: 100%;">
+        <!-- Small Screen Image -->
+        <img class="w3-image w3-hide-large w3-hide-medium" src="img/cover/bas-mobile-min.jpg" alt="Architecture" width="1500" style="height:100%">
+        <!-- Large Screen Cover Text -->
+        <div class="w3-display-middle w3-margin-top w3-black w3-opacity-min w3-center w3-hide-small">
+            <h1 class="w3-jumbo"><span class="w3-padding w3-text-green"><b>Building Automation System</b></span></h1>
+        </div>
+        <!-- Small Screen Cover Text -->
+        <div class="w3-display-middle w3-margin-top w3-black w3-opacity-min w3-center w3-hide-large">
+            <h1 class="w3-xxlarge w3-center"><span class=" w3-text-green"><b>Building Automation System</b></span></h1>
+        </div>
+        <!-- Large Screen Path Text -->
+        <div class="w3-display-bottommiddle w3-container w3-padding w3-hide-small">
+            <p style="text-shadow:1px 1px 0 #444" class="w3-text-white w3-large">
+                <a href="#">Home</a> /
+                <a href="#">Solution</a> /
+                <a href="#">Building Automation System</a>
+            </p>
+        </div>
+        <!-- Small Screen Path Text -->
+        <div class="w3-display-bottomleft w3-container w3-padding w3-hide-large w3-hide-medium">
+            <p style="text-shadow:1px 1px 0 #444" class="w3-text-white w3-large">
+                <a href="#">Home</a> /
+                <a href="#">Solution</a> /
+                <a href="#">Building Automation System</a>
+            </p>
+        </div>
+    </header>
+
+
+
+
+    <!-- Introduction of Automatic Car Washing System  -->
+    <div class="w3-row-padding w3-padding-64 w3-container" style="max-width:1564px">
+        <div class="w3-content">
+            <!-- w3-content -->
+            <div class="w3-row">
+                <h1 class="w3-text-green">Energy Efficiency via Building Automation System (BAS)</h1>
+                <div class="w3-col l6 s12">                    
+                    <p class="w3-text-grey w3-large">
+                        <span class="w3-text-green"><b>BAS</b></span> is Computer systems that take the driver and used as a tool for building energy management system.
+                    </p>
+                    <ol>
+                        <li>
+                            The system can display the power meter and ambient temperature as well as the working status – turn on/ turn off the air conditioning in each of unit by working Online.
+                        </li>
+                        <li>
+                            Remote system - turn off air conditioning, lighting, set the Set Point of the air by computer control, timer - turn off air conditioning. And light each office. 
+                        </li>
+                        <li>
+                            The system can record And report energy use automatically.
+                        </li>
+                    </ol>                    
+                </div>
+                
+                <div class="w3-col l6 s12" >                                        
+                    <img class="w3-padding w3-image" src="img/solution/bas/bas1-min.jpg">
+                </div>                
+            </div>
+            
+            <div class="w3-row">
+                <div class="w3-col s12 w3-center">
+                    <img class="w3-padding w3-card w3-image" src="img/solution/bas/bas2-min.jpg">
+                </div>                                
+            </div>
+            
+            <div class="w3-row w3-margin-top">
+                <p class="w3-text-grey w3-large">
+                    Our Building Automation System will be included
+                </p>
+                <ul>
+                    <li>
+                        Installation of measuring and recording the energy and the temperature of each room of the building.
+                    </li>
+                    <li>
+                        Installation of Measurement and automatic control systems for air conditioning and lighting.
+                    </li>
+                    <li>
+                        Collect the data  and reporting energy use of each party.
+                    </li>
+                    <li>
+                        The use of technology for energy management in buildings
+                    </li>
+                    <li>
+                        Awareness to save electricity in the organization.
+                    </li>                
+                </ul>
+            </div>
+            
+            <div class="w3-row w3-margin-top">
+                <div class="w3-col s12 w3-center w3-card">
+                    <img class="w3-padding w3-image" src="img/solution/bas/bas3-min.jpg">
+                    <div class="w3-container w3-green">
+                        <p class="w3-large">
+                            CAG Building Automation System  provides the highest level of interoperability at every level
+                        </p>
+                    </div>
+                </div>                                
+            </div>
+            
+            <div class="w3-card w3-margin-top">
+                <h1 class="w3-text-green w3-center">
+                    Direct Energy BAS Solutions
+                </h1>    
+                
+                <div class="w3-cell-row">
+                    <div class="w3-container w3-green w3-cell w3-cell-middle w3-mobile" style="width: 30%">
+                        <p class="w3-large">
+                            Our solutions are designed for both specific building requirements
+                            and overall corporate standards
+                        </p>
+                    </div>
+                    
+                    <div class="w3-container w3-light-grey w3-cell w3-mobile">
+                        
+                        <div class="w3-row w3-padding-16">
+                            <div class="w3-half">
+                                <h2 class="w3-large">
+                                    <span class="w3-green w3-padding">Control</span>
+                                </h2>
+                                <ul>
+                                    <li>
+                                        HVAC
+                                    </li>
+                                    <li>
+                                        Lighting
+                                    </li>
+                                    <li>
+                                        Security
+                                    </li>                            
+                                    <li>
+                                        Power Quality
+                                    </li>
+                                    <li>
+                                        Web Based Engery Monitoring
+                                    </li>
+                                    <li>
+                                        Demand Response
+                                    </li>
+                                </ul>
+                            </div>
+                            
+                            <div class="w3-half">
+                                <h2 class="w3-large">
+                                    <span class="w3-green w3-padding">Services</span>
+                                </h2>
+                                <ul>
+                                    <li>
+                                        Custom Design & Installation
+                                    </li>
+                                    <li>
+                                        Integration of Different Systems
+                                    </li>
+                                    <li>
+                                        Maintenance & Service
+                                    </li>                            
+                                    <li>
+                                        Remote Monitoring with Alarm & Trending
+                                    </li>                                                                        
+                                </ul>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+            
+            
+            
+        </div>
+    </div>
+    
+    <style>
+        .vertical-text {
+            -ms-transform: rotate(270deg);
+            -webkit-transform: rotate(270deg);
+            transform: rotate(270deg);
+        }
+    </style>
+    
+    <!-- Advantages of CAG’s Building Automation Syatem -->
+    <div class="w3-container w3-padding-64 w3-light-grey">
+        <div class="w3-content">
+            <h1 class="w3-text-green">Advantages of CAG’s Building Automation Syatem</h1>
+            
+            <div class="w3-cell-row">
+                <!--  desktop -->
+              <div class="w3-container w3-green w3-cell w3-cell-middle w3-mobile w3-hide-small w3-hide-medium" style=" height: 300px">
+                <p class="w3-xlarge vertical-text w3-text-white">
+                    Advantages
+                </p>
+              </div>
+                <!--  mobile -->
+                <div class="w3-container w3-green w3-cell w3-cell-middle w3-mobile w3-hide-large">
+                    <p class="w3-xlarge w3-text-white">
+                        Advantages
+                    </p>
+                </div>
+                
+              <div class="w3-container w3-white w3-cell w3-mobile">
+                <p class="w3-large">
+                    Allow Building Managers to Monitor and control  one or many facilities!
+                </p>
+                  
+                <p class="w3-large">
+                    System adjustment and problem resolution can be accomplished either on-site or remotely saving time & money
+                </p>
+                  
+                <p class="w3-large">
+                    Decreased equipment down time due to equipment alarm notification and ability to take action from remote location
+                </p>
+                
+                <p class="w3-large">
+                    User friendly operation!
+                </p>
+                
+                <p class="w3-large">
+                    Improved Service diagnostics allow preventive measures to be taken before equipment failure
+                </p>
+                
+                <p class="w3-large">
+                    Reduced comfort complaints from tenants/ employees
+                </p>
+                
+                <p class="w3-large">
+                    Improve staff maximization and training between facilities.
+                </p>
+                
+                <p class="w3-large">
+                    Seamless integration of key facility systems and control devices
+                </p>
+                  
+                <p class="w3-large">
+                    Reduce energy use.
+                </p>
+                
+                <p class="w3-large">
+                    ROI –Typically 2 to 5 years
+                </p>
+                
+                <p class="w3-large">
+                    Always thinking about next Building Automation  generation!
+                </p>
+                
+                <p class="w3-large">
+                    One of the Best Building Energy Management System Controller  in Thailand , Myanmar and South East Asia region.
+                </p>
+              </div>          
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Other CAG Provided Solutions -->
+    <button onclick="myFunction('Demo3')" class="w3-button w3-block w3-green">
+  <!-- Large Screen btn -->
+  <h3 class="w3-hide-small">Other Solutions of CAG Engineering</h3>
+  <!-- small screen btn -->
+  <h3 class="w3-hide-large w3-hide-medium w3-large">Other Solutions of CAG Engineering</h3>
+</button>
+
+    <div id="Demo3" class="w3-hide w3-container w3-center w3-pale-green">
+        <p>
+            <a href="#">Water Treatment System</a>
+        </p>
+
+        <p>
+            <a href="#">Waste Water Treatment System</a>
+        </p>
+
+        <p>
+            <a href="#">Industrial Chemicals Supply</a>
+        </p>
+
+        <p>
+            <a href="#">Building Automation System</a>
+        </p>
+
+        <p>
+            <a href="#">Filtration System</a>
+        </p>
+
+        <p>
+            <a href="#">Air Cooled Chiller</a>
+        </p>
+
+        <p>
+            <a href="#">Automatic​ Car Washing System</a>
+        </p>
+
+        <p>
+            <a href="#">Intrusion​ ​ Detection​ ​ System</a>
+        </p>
+
+        <p>
+            <a href="#">Biological Membrane Tank System</a>
+        </p>
+
+    </div>
+
+    <!-- Join Pro Team Section -->
+    <section class="w3-display-container w3-opacity-min" style="min-height:400px; background-attachment: fixed;background-position: center;background-repeat: no-repeat;background-size: cover;background-image: url('img/cover/join_pro_team_min.jpg');">
+        <div class="w3-display-middle w3-black w3-padding-large w3-button">
+            <!-- large screen btn -->
+            <h2 class="w3-hide-small">Discuss Your Requirments with Our Professional Team</h2>
+            <!-- small screen btn -->
+            <h2 class="w3-hide-large w3-hide-medium w3-xlarge">Discuss Your Requirments <br/> with Our Professional Team</h2>
+        </div>
+    </section>
+
+    <!-- <div class="w3-display-container w3-content w3-wide" style="max-width:1500px;" id="home">
+    <img class="w3-image" src="img/cover/join_pro_team_min.jpg" alt="Architecture" width="1500" height="400">
+    <div class="w3-display-middle w3-margin-top w3-center">
+      <h1 class="w3-jumbo"><span class="w3-padding w3-black w3-text-green w3-opacity-min"><b>About Us</b></span></h1>
+    </div>
+    <div class="w3-display-bottommiddle w3-container w3-padding">
+      <p style="text-shadow:1px 1px 0 #444" class="w3-text-white w3-large">
+          <a href="#">Home</a> / 
+          <a href="#">About Us</a>
+      </p>
+    </div>
+  </div> -->
+
+
+    <!-- Footer -->
+    <footer class="w3-center w3-black w3-padding-16">
+        <img class="w3-padding-16" src="img/white-cag-logo-no-bk.png" width="400px" style="max-width:300px;" />
+        <p>
+            <a href="#">Home</a> |
+            <a href="#">Services</a> |
+            <a href="#">Products</a> |
+            <a href="#">Projects</a> |
+            <a href="#">About Us</a> |
+            <a href="#">Contact</a>
+        </p>
+        <p>
+            <button class="w3-button w3-border w3-hover-green"><i class="fa fa-facebook"></i></button>
+            <button class="w3-button w3-border w3-hover-green"><i class="fa fa-youtube-play"></i></button>
+            <button class="w3-button w3-border w3-hover-green"><i class="fa fa-google-plus"></i></button>
+            <button class="w3-button w3-border w3-hover-green"><i class="fa fa-twitter"></i></button>
+            <button class="w3-button w3-border w3-hover-green"><i class="fa fa-linkedin"></i></button>
+        </p>
+        <p>Copyright © 2017 </p>
+        <p class="w3-tiny">Proudly developed by <a href="#" target="_blank">Arkar</a></p>
+    </footer>
+
+
+
+    <script>
+        // Used to toggle the menu on small screens when clicking on the menu button
+        function mobileNav() {
+            var x = document.getElementById("navDemo");
+            if (x.className.indexOf("w3-show") == -1) {
+                x.className += " w3-show";
+            } else {
+                x.className = x.className.replace(" w3-show", "");
+            }
+        }
+    </script>
+
+    <!-- Add Other CAG Provided Solutions -->
+    <script>
+        function myFunction(id) {
+            var x = document.getElementById(id);
+            if (x.className.indexOf("w3-show") == -1) {
+                x.className += " w3-show";
+            } else {
+                x.className = x.className.replace(" w3-show", "");
+            }
+        }
+    </script>
+
+
+    <!-- Add Water Treatment Cateogry -->
+
+    <script>
+        function openCity(evt, cityName) {
+            var i, x, tablinks;
+            x = document.getElementsByClassName("city");
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+            tablinks = document.getElementsByClassName("tablink");
+            for (i = 0; i < x.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" w3-border-black", "");
+            }
+            document.getElementById(cityName).style.display = "block";
+            evt.currentTarget.firstElementChild.className += " w3-border-black";
+        }
+    </script>
+
+    <!-- Add Google Maps -->
+    <script>
+        function myMap() {
+            myCenter = new google.maps.LatLng(16.833762, 96.169509);
+            var mapOptions = {
+                center: myCenter,
+                zoom: 15,
+                scrollwheel: false,
+                draggable: false,
+                mapTypeId: google.maps.MapTypeId.ROADMAP
+            };
+            var map = new google.maps.Map(document.getElementById("googleMap"), mapOptions);
+
+            var marker = new google.maps.Marker({
+                position: myCenter,
+            });
+            marker.setMap(map);
+        }
+    </script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBuSr5a5KMyK3Y3k2iYryUhd2wf3H-aN7A&callback=myMap"></script>
+    <!--
+To use this code on your website, get a free API key from Google.
+Read more at: https://www.w3schools.com/graphics/google_maps_basic.asp
+-->
+
+</body>
+
+</html>
