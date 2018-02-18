@@ -1,4 +1,23 @@
+.home-slider1-bg {
+    background-position: center;
+    background-size: cover;
+    background-image: url("../img/slider/cag-slider1-min.jpg");
+    min-height: 50%;
+}
 
+.home-slider2-bg {
+    background-position: center;
+    background-size: cover;
+    background-image: url("../img/slider/cag-slider2-min.jpg");
+    min-height: 50%;
+}
+
+.home-slider3-bg {
+    background-position: center;
+    background-size: cover;
+    background-image: url("../img/slider/cag-slider3-min.jpg");
+    min-height: 50%;
+}
 
 /* start page loade*/
     .hameid-loader-overlay {

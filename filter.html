@@ -1,0 +1,591 @@
+<!DOCTYPE html>
+<html>
+<title>Filter & Belt Press | CAG Engineering</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="css/cag-engineering.css">
+<link href="https://fonts.googleapis.com/css?family=Encode+Sans+Expanded:500" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<!--Test Facebook Link Preview-->
+<meta property="og:title" content="CAG Engineering | About Us">
+<meta property="og:description" content="CAG Engineering Company Limited has been established in Myanmar to participate in Water and Waste Water Treatment for Industrial and commercials, building instruments and a wide-range of control instrument field, inside and outside Myanmar.">
+<meta property="og:image" content="https://arkar92.github.io/cag-engineering/img/cover/cag_about_us_min.jpg">
+<meta property="og:url" content="https://arkar92.github.io/cag-engineering/about.html">
+
+<!-- favicon insert -->
+<link rel="apple-touch-icon" sizes="180x180" href="img/favicons/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="img/favicons/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="img/favicons/favicon-16x16.png">
+<link rel="manifest" href="img/favicons/manifest.json">
+<link rel="mask-icon" href="img/favicons/safari-pinned-tab.svg" color="#5bbad5">
+<meta name="theme-color" content="#ffffff">
+
+<!--js plugin -->
+<script src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.9"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="https://www.w3schools.com/lib/w3.js"></script>
+<script src="js/cag-engineering.js"></script>
+
+
+<body>
+
+        <!-- page pre-loading -->
+    <div class="hameid-loader-overlay w3-display-container">
+        <div class="w3-display-middle w3-center">
+            <img src="img/white-cag-logo-no-bk.png" class="w3-image" />
+            <h1 class="w3-center w3-text-white w3-large">Welcome to <b><span class="w3-text-green">CAG</span> Engineering</b></h1>
+            <!--        <h2 class="w3-center w3-text-white w3-medium">Page is loading...</h2>-->
+            <div class="w3-center">
+                <img src="img/load.gif" style="width: 50px" />
+            </div>
+        </div>
+    </div>
+
+
+    <!-- ////
+            Navigation Bar
+        //// -->
+
+    <!-- Navbar (sit on top) -->
+    <div class="w3-top">
+        <div class="w3-bar w3-white w3-wide w3-padding w3-card">
+            <a class="w3-bar-item w3-button w3-padding-large  w3-hide-large w3-right" href="javascript:void(0)" onclick="mobileNav()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+            <a href="#home" class="w3-bar-item w3-button"><b class="w3-text-green">CAG</b> Engineering</a>
+            <!-- Float links to the right. Hide them on small screens -->
+            <div class="w3-right w3-hide-small w3-hide-medium">
+                <a href="#projects" class="w3-bar-item w3-button">Home</a>
+                <a href="#projects" class="w3-bar-item w3-button">Solutions</a>
+                <!-- <a href="#projects" class="w3-bar-item w3-button">Services</a> -->
+                <!-- <a href="#projects" class="w3-bar-item w3-button">Products</a> -->
+                <a href="#projects" class="w3-bar-item w3-button">Projects</a>
+                <a href="#about" class="w3-bar-item w3-green w3-button">About</a>
+                <a href="#contact" class="w3-bar-item w3-button">Contact</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navbar on small screens -->
+    <div id="navDemo" class="w3-bar-block w3-light-grey w3-hide w3-hide-large w3-top" style="margin-top:60px">
+        <a href="#band" class="w3-bar-item w3-button w3-padding-large">Home</a>
+        <a href="#tour" class="w3-bar-item w3-button w3-padding-large">Solutions</a>
+        <a href="#contact" class="w3-bar-item w3-button w3-padding-large">Projects</a>
+        <a href="#" class="w3-bar-item w3-button w3-padding-large w3-green">About</a>
+        <a href="#" class="w3-bar-item w3-button w3-padding-large">Contact</a>
+    </div>
+
+
+    <!-- Header -->
+    <header class="w3-display-container w3-content w3-wide" style="max-width:1500px;" id="home">
+        <!-- Large Screen Image -->
+        <img class="w3-image w3-hide-small" src="img/cover/filter-desktop.jpg" alt="Architecture" width="1500" height="800">
+        <!-- Small Screen Image -->
+        <img class="w3-image w3-hide-large w3-hide-medium" src="img/cover/filter-mobile.jpg" alt="Architecture" width="1500" style="height:100%">
+        <!-- Large Screen Cover Text -->
+        <div class="w3-display-middle w3-margin-top w3-black w3-opacity-min w3-center w3-hide-small">
+            <h1 class="w3-jumbo"><span class="w3-padding w3-text-green"><b>Filtering Solution</b></span></h1>
+        </div>
+        <!-- Small Screen Cover Text -->
+        <div class="w3-display-middle w3-margin-top w3-black w3-opacity-min w3-center w3-hide-large w3-hide-medium">
+            <h1 class="w3-xxlarge w3-center"><span class=" w3-text-green"><b>Filtering Solution</b></span></h1>
+        </div>
+        <!-- Large Screen Path Text -->
+        <div class="w3-display-bottommiddle w3-container w3-padding w3-hide-small">
+            <p style="text-shadow:1px 1px 0 #444" class="w3-text-white w3-large">
+                <a href="#">Home</a> /
+                <a href="#">Solution</a> /
+                <a href="#">Filtering Solution</a>
+            </p>
+        </div>
+        <!-- Small Screen Path Text -->
+        <div class="w3-display-bottomleft w3-container w3-padding w3-hide-large w3-hide-medium">
+            <p style="text-shadow:1px 1px 0 #444" class="w3-text-white w3-large">
+              <a href="#">Home</a> /
+              <a href="#">Solution</a> /
+              <a href="#">Filtering Solution</a>
+            </p>
+        </div>
+    </header>
+
+
+
+    <!-- color container -->
+    <div class="w3-light-grey">
+        <!-- Page content -->
+        <div class="w3-content w3-padding" style="max-width:1564px">
+
+        <!-- Introduction of CAG Engineering  -->
+          <div class="w3-row-padding w3-padding-64 w3-container w3-light-grey">
+            <div class="w3-content"> <!-- w3-content -->
+
+
+                <h1 class="w3-text-green">Filtering Solution (Filter & Belt Press)</h1>
+                <p class="w3-text-grey w3-large">
+                    Automatic filter press, namely auto filter press, is one of the  solid-liquid separation machine. And automatic filter press can be used as mineral filter press, sludge filter press and so on. CAG Engineering has been developing for the filtering solution such as Filter press,  Belt press, Polymer Unit , Filter Cloth, Filter Plate for various range of Industrialist. As one of the leader <b class="w3-text-green">filtration equipment</b> importer in Myanmar, CAG Engineering has participated in many turnkey plant in Myanmar. We are experienced in <b class="w3-text-green">solid-liquid separation</b> for various industries such as Starch Industry, Pulp and Paper Industry, Mining Industry, Sugar Industry, Soya bean Sauce Industry, etc.
+                </p>
+
+                <!-- Filter Press -->
+                <h3 class="w3-green w3-padding">
+                  Filter Press
+                </h3>
+                <p class="w3-text-grey w3-large">
+                  Filter press, is one solid-liquid separation machine. And automatic filter press can be applied for mineral filter press, sludge filter press and so on.
+                </p>
+
+
+
+              <div class="w3-row">
+
+                <div class="w3-col l8 s12">
+                  <ul>
+                    <li>
+                      <b class="w3-text-green">Agitation equipment</b>:
+                      To mix the raw material, it can be added with flocculant as filter aid.
+                    </li>
+                    <li>
+                      <b class="w3-text-green">Feeding Pump</b>:
+                      To feed the raw material in to the filter press,  with feeding pressure.
+                    </li>
+                    <li>
+                      <b class="w3-text-green">Filter press</b>:
+                      Filter cake forms filter chambers ,filter cloth is the filter media to do solid and liquid separation.
+                    </li>
+                    <li>
+                      <b class="w3-text-green">Reverse-blow and reverse-wash</b>:
+                      Reverse-blow the air or steam to decrease the cake's moisture abd the water residue  in the pipes. Reverse-wash can adjust the PH value abd clean the filter chambers.
+                    </li>
+                    <li>
+                      <b class="w3-text-green">Working Plant</b>:
+                      For operation and supply working space.
+                    </li>
+                    <li>
+                      <b class="w3-text-green">Working Room</b>:
+                      To form a isolation environment, good for the outside work.
+                    </li>
+                    <li>
+                      <b class="w3-text-green">Auto Pull-plate</b>:
+                      Auto open the plates to discharge the cake.
+                    </li>
+                    <li>
+                      <b class="w3-text-green">Auto Washing</b>:
+                      Auto wash the filter cloth.
+                    </li>
+                    <li>
+                      <b class="w3-text-green">Bomb door</b>:
+                      Anti-drip and save space.
+                    </li>
+                    <li>
+                      <b class="w3-text-green">Belt conveyor</b>:
+                      To transport the cake.
+                    </li>
+                    <li>
+                      <b class="w3-text-green">Process control automation</b>: PLC
+                    </li>
+                  </ul>
+                </div>
+
+                <div class="w3-col l4 s12">
+                  <img class="w3-padding" width="100%" src="img/solution/filter/filter1.jpg" alt="">
+                </div>
+
+
+              </div>
+
+              <!-- Belt Press -->
+              <h3 class="w3-green w3-padding">
+                Belt Press
+              </h3>
+
+              <p class="w3-text-grey w3-large">
+                Belt Filter Press, is one of the solid-liquid separation machine used for filter flocculation slurry ( Sludge ) by machine . Filtration of slurry or sludge must be flocculation by polymer in case of unable to flocculate should be used filter press machine for active better result.
+              </p>
+
+            <div class="w3-row">
+
+              <div class="w3-col l8 s12">
+                <ol>
+                  <li>
+                    Filtering, discharging, filter-cloth cleaning, all processes in one step.
+                  </li>
+                  <li>
+                    It can filter raw material with different concentration degree.
+                  </li>
+                  <li>
+                    Huge capacity, high filtering efficiency, and low moisture in cake.
+                  </li>
+                  <li>
+                    Very few spare parts,  low failure-rate. It is continuously working 24 hours a day.
+                  </li>
+                  <li>
+                    It has the partly closed and total closed design to fit the raw material which is volatile.
+                  </li>
+                  <li>
+                    Widely used in environmental protection, mining, chemical industry, metallurgy, papermaking, food, pharmaceutical, coal, etc
+                  </li>
+                </ol>
+              </div>
+
+              <div class="w3-col l4 s12">
+                <img class="w3-padding" width="100%" src="img/solution/filter/filter2.jpg" alt="">
+              </div>
+            </div>
+
+            <!-- polymer unit -->
+            <h3 class="w3-green w3-padding">
+              Polymer Unit
+            </h3>
+            <div class="w3-row">
+              <div class="w3-twothird">
+                <p class="w3-text-grey w3-large">
+                  Polymer unit use for prepare polymer solution from solid  polymer or liquid polymer for concentration of prepared polymer solution between 0.1 -0.5% w/w depend on solution viscosity use for Belt Filter Press, or Filter Press in various industry.
+                </p>
+              </div>
+
+              <div class="w3-third">
+                <img class="w3-padding" width="100%" src="img/solution/filter/filter3.jpg" alt="">
+              </div>
+            </div>
+
+            <!-- filter plate -->
+            <h3 class="w3-green w3-padding">
+              Filter Plate
+            </h3>
+            <p class="w3-text-grey w3-large">
+              Filter plates are made from Polypropylene with press mould type. The designing provided for filtration pressure at 15Bars. We can offer different model and material filter plate, we can also customized production.
+            </p>
+            <h4 class="w3-text-green">
+              Product Details
+            </h4>
+            <ol>
+                <li>
+                  Filter plate is the mainly part which decided the performance of filter press.
+                </li>
+                <li>
+                  Material: PP, Cast Iron, Stainless Steel.
+                </li>
+                <li>
+                  Model: chamber Filter Plate, Membrane filter plate, Plate &Frame filter plate.
+                </li>
+                <li>
+                  Temperture: Normal Filter Plate, High-temperature Filter Plate.
+                </li>
+                <li>
+                  Pressure: Normal Filter Plate, High strength filter plate.
+                </li>
+                <li>
+                  The number of filter plate decide filter area, the chamber volume decide the thickness of cake.
+                </li>
+                <li>
+                  We have different size of filter plate, we can custom-made it.
+                </li>
+            </ol>
+
+            <div class="w3-row">
+              <div class="w3-third">
+                <img class="w3-padding" width="100%" src="img/solution/filter/filter4.jpg" alt="">
+              </div>
+              <div class="w3-third">
+                <img class="w3-padding" width="100%" src="img/solution/filter/filter5.jpg" alt="">
+              </div>
+              <div class="w3-third">
+                <img class="w3-padding" width="100%" src="img/solution/filter/filter6.jpg" alt="">
+              </div>
+            </div>
+
+
+            <!-- Filter Cloth -->
+            <h3 class="w3-green w3-padding">
+              Filter Cloth
+            </h3>
+            <p class="w3-text-grey w3-large">
+              Filter cloth is the filtering media, it separates the solid and liquid by vacuum pump, according to the theory of gravity. The efficiency of the filter press filtration is depends on filter cloth. We supply customers with many kinds of filter cloth for filter press, belt press and vacuum belt filter.
+            </p>
+            <h4 class="w3-text-green">
+              Product Details
+            </h4>
+            <ol>
+                <li>
+                  Filter cloth is the filtering medium of the filtering equipments, and it is also the main spare parts.
+                </li>
+                <li>
+                  Filter cloth's mesh decides on the filters' filtering precision.
+                </li>
+                <li>
+                  Depending on the material's temperature, viscosity, particle size, to choose the     correct type of filter cloth
+                </li>
+                <li>
+                  As for the special raw material, we can customize the filter cloth, however, there  is a MOQ
+                </li>
+                <li>
+                  Customers shall give us the size, quality, air permeability for the filter cloth.
+                </li>
+            </ol>
+
+            <div class="w3-row">
+              <div class="w3-quarter">
+                <img class="w3-padding" width="100%" src="img/solution/filter/filter7.jpg" alt="">
+              </div>
+              <div class="w3-quarter">
+                <img class="w3-padding" width="100%" src="img/solution/filter/filter8.jpg" alt="">
+              </div>
+              <div class="w3-quarter">
+                <img class="w3-padding" width="100%" src="img/solution/filter/filter9.jpg" alt="">
+              </div>
+              <div class="w3-quarter">
+                <img class="w3-padding" width="100%" src="img/solution/filter/filter10.jpg" alt="">
+              </div>
+            </div>
+
+
+
+            </div>
+          </div>
+
+        </div>
+        <!-- End Page Content -->
+    </div>
+    <!-- End color container -->
+
+
+
+
+    <!-- Other CAG Provided Solutions -->
+    <button onclick="myFunction('Demo3')" class="w3-button w3-block w3-green">
+  <!-- Large Screen btn -->
+  <h3 class="w3-hide-small">Other Solutions of CAG Engineering</h3>
+  <!-- small screen btn -->
+  <h3 class="w3-hide-large w3-hide-medium w3-large">Other Solutions of CAG Engineering</h3>
+</button>
+
+    <div id="Demo3" class="w3-hide w3-container w3-center w3-pale-green">
+        <p>
+            <a href="#">Water Treatment System</a>
+        </p>
+
+        <p>
+            <a href="#">Waste Water Treatment System</a>
+        </p>
+
+        <p>
+            <a href="#">Industrial Chemicals Supply</a>
+        </p>
+
+        <p>
+            <a href="#">Building Automation System</a>
+        </p>
+
+        <p>
+            <a href="#">Filtration System</a>
+        </p>
+
+        <p>
+            <a href="#">Air Cooled Chiller</a>
+        </p>
+
+        <p>
+            <a href="#">Automatic​ Car Washing System</a>
+        </p>
+
+        <p>
+            <a href="#">Intrusion​ ​ Detection​ ​ System</a>
+        </p>
+
+        <p>
+            <a href="#">Biological Membrane Tank System</a>
+        </p>
+
+    </div>
+
+
+    <!-- Join Pro Team Section -->
+    <section class="w3-display-container w3-opacity-min" style="min-height:400px; background-attachment: fixed;background-position: center;background-repeat: no-repeat;background-size: cover;background-image: url('img/cover/join_pro_team_min.jpg');">
+        <div class="w3-display-middle w3-black w3-padding-large w3-button">
+            <!-- large screen btn -->
+            <h2 class="w3-hide-small">Discuss Your Requirments with Our Professional Team</h2>
+            <!-- small screen btn -->
+            <h2 class="w3-hide-large w3-hide-medium w3-large">Discuss Your Requirments <br/> with Our Professional Team</h2>
+        </div>
+    </section>
+
+<!-- <div class="w3-display-container w3-content w3-wide" style="max-width:1500px;" id="home">
+    <img class="w3-image" src="img/cover/join_pro_team_min.jpg" alt="Architecture" width="1500" height="400">
+    <div class="w3-display-middle w3-margin-top w3-center">
+      <h1 class="w3-jumbo"><span class="w3-padding w3-black w3-text-green w3-opacity-min"><b>About Us</b></span></h1>
+    </div>
+    <div class="w3-display-bottommiddle w3-container w3-padding">
+      <p style="text-shadow:1px 1px 0 #444" class="w3-text-white w3-large">
+          <a href="#">Home</a> /
+          <a href="#">About Us</a>
+      </p>
+    </div>
+  </div> -->
+
+    <!--w3 js footer -->
+    <div w3-include-html="footer.html"></div>
+
+<!-- Footer -->
+<!--
+<footer class="w3-center w3-black w3-padding-16">
+  <img class="w3-padding-16" src="img/white-cag-logo-no-bk.png" width="400px" />
+  <p>
+    <a href="#">Home</a> |
+    <a href="#">Services</a> |
+    <a href="#">Products</a> |
+    <a href="#">Projects</a> |
+    <a href="#">About Us</a> |
+    <a href="#">Contact</a>
+  </p>
+  <p>
+    <button class="w3-button w3-border w3-hover-green"><i class="fa fa-facebook"></i></button>
+    <button class="w3-button w3-border w3-hover-green"><i class="fa fa-youtube-play"></i></button>
+    <button class="w3-button w3-border w3-hover-green"><i class="fa fa-google-plus"></i></button>
+    <button class="w3-button w3-border w3-hover-green"><i class="fa fa-twitter"></i></button>
+    <button class="w3-button w3-border w3-hover-green"><i class="fa fa-linkedin"></i></button>
+  </p>
+  <p>Copyright © 2017 </p>
+  <p class="w3-tiny">Proudly developed by <a href="#" target="_blank">Arkar</a></p>
+</footer>
+-->
+
+
+
+    <!--facebook page chat js-->
+    <!--<style>.fb-livechat,.fb-widget{display:none}.ctrlq.fb-button,.ctrlq.fb-close{position:fixed;right:24px;cursor:pointer}.ctrlq.fb-button{z-index:1;background:url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/PjwhRE9DVFlQRSBzdmcgIFBVQkxJQyAnLS8vVzNDLy9EVEQgU1ZHIDEuMS8vRU4nICAnaHR0cDovL3d3dy53My5vcmcvR3JhcGhpY3MvU1ZHLzEuMS9EVEQvc3ZnMTEuZHRkJz48c3ZnIGVuYWJsZS1iYWNrZ3JvdW5kPSJuZXcgMCAwIDEyOCAxMjgiIGhlaWdodD0iMTI4cHgiIGlkPSJMYXllcl8xIiB2ZXJzaW9uPSIxLjEiIHZpZXdCb3g9IjAgMCAxMjggMTI4IiB3aWR0aD0iMTI4cHgiIHhtbDpzcGFjZT0icHJlc2VydmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiPjxnPjxyZWN0IGZpbGw9IiMwMDg0RkYiIGhlaWdodD0iMTI4IiB3aWR0aD0iMTI4Ii8+PC9nPjxwYXRoIGQ9Ik02NCwxNy41MzFjLTI1LjQwNSwwLTQ2LDE5LjI1OS00Niw0My4wMTVjMCwxMy41MTUsNi42NjUsMjUuNTc0LDE3LjA4OSwzMy40NnYxNi40NjIgIGwxNS42OTgtOC43MDdjNC4xODYsMS4xNzEsOC42MjEsMS44LDEzLjIxMywxLjhjMjUuNDA1LDAsNDYtMTkuMjU4LDQ2LTQzLjAxNUMxMTAsMzYuNzksODkuNDA1LDE3LjUzMSw2NCwxNy41MzF6IE02OC44NDUsNzUuMjE0ICBMNTYuOTQ3LDYyLjg1NUwzNC4wMzUsNzUuNTI0bDI1LjEyLTI2LjY1N2wxMS44OTgsMTIuMzU5bDIyLjkxLTEyLjY3TDY4Ljg0NSw3NS4yMTR6IiBmaWxsPSIjRkZGRkZGIiBpZD0iQnViYmxlX1NoYXBlIi8+PC9zdmc+) center no-repeat #0084ff;width:60px;height:60px;text-align:center;bottom:24px;border:0;outline:0;border-radius:60px;-webkit-border-radius:60px;-moz-border-radius:60px;-ms-border-radius:60px;-o-border-radius:60px;box-shadow:0 1px 6px rgba(0,0,0,.06),0 2px 32px rgba(0,0,0,.16);-webkit-transition:box-shadow .2s ease;background-size:80%;transition:all .2s ease-in-out}.ctrlq.fb-button:focus,.ctrlq.fb-button:hover{transform:scale(1.1);box-shadow:0 2px 8px rgba(0,0,0,.09),0 4px 40px rgba(0,0,0,.24)}.fb-widget{background:#fff;z-index:2;position:fixed;width:360px;height:435px;overflow:hidden;opacity:0;bottom:0;right:24px;border-radius:6px;-o-border-radius:6px;-webkit-border-radius:6px;box-shadow:0 5px 40px rgba(0,0,0,.16);-webkit-box-shadow:0 5px 40px rgba(0,0,0,.16);-moz-box-shadow:0 5px 40px rgba(0,0,0,.16);-o-box-shadow:0 5px 40px rgba(0,0,0,.16)}.fb-credit{text-align:center;margin-top:8px}.fb-credit a{transition:none;color:#bec2c9;font-family:Helvetica,Arial,sans-serif;font-size:12px;text-decoration:none;border:0;font-weight:400}.ctrlq.fb-overlay{z-index:0;position:fixed;height:100vh;width:100vw;-webkit-transition:opacity .4s,visibility .4s;transition:opacity .4s,visibility .4s;top:0;left:0;background:rgba(0,0,0,.05);display:none}.ctrlq.fb-close{z-index:4;padding:0 6px;background:#365899;font-weight:700;font-size:11px;color:#fff;margin:8px;border-radius:3px}.ctrlq.fb-close::after{content:'x';font-family:sans-serif}</style>-->
+
+    <div class="fb-livechat w3-hide-small">
+        <div class="ctrlq fb-overlay"></div>
+        <div class="fb-widget w3-hide-small">
+            <div class="ctrlq fb-close"></div>
+
+            <!--  mobbile    -->
+            <div class="fb-page w3-hide-large w3-hide-medium" data-href="https://www.facebook.com/cagengineering/" data-tabs="messages" data-width="300" data-height="400" data-small-header="true" data-hide-cover="true" data-show-facepile="false">
+                <blockquote cite="https://www.facebook.com/cagengineering/" class="fb-xfbml-parse-ignore"> </blockquote>
+            </div>
+
+            <!--  desktop and tablet  -->
+            <div class="fb-page w3-hide-small" data-href="https://www.facebook.com/cagengineering/" data-tabs="messages" data-width="360" data-height="400" data-small-header="true" data-hide-cover="true" data-show-facepile="false">
+                <blockquote cite="https://www.facebook.com/cagengineering/" class="fb-xfbml-parse-ignore"> </blockquote>
+            </div>
+
+            <div class="fb-credit">
+                <a href="https://www.labnol.org/software/facebook-messenger-chat-widget/9583/" target="_blank">Facebook Chat Widget by Digital Inspiration</a>
+            </div>
+            <div id="fb-root"></div>
+        </div>
+        <a href="https://m.me/cagengineering" title="Send us a message on Facebook" class="ctrlq fb-button"></a>
+    </div>
+
+    <!--  fb chat button for mobile  -->
+    <div class="w3-bottom w3-hide-large w3-hide-medium w3-padding">
+        <a class="w3-buuton w3-white w3-xlarge w3-right w3-padding" href="https://m.me/cagengineering">
+        <img src="img/logo/facebook-messenger.svg" style="width: 35px; height: 35px;" />
+    </a>
+    </div>
+
+
+    <script src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.9"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            var t = {
+                delay: 125,
+                overlay: $(".fb-overlay"),
+                widget: $(".fb-widget"),
+                button: $(".fb-button")
+            };
+            setTimeout(function() {
+                $("div.fb-livechat").fadeIn()
+            }, 8 * t.delay), $(".ctrlq").on("click", function(e) {
+                e.preventDefault(), t.overlay.is(":visible") ? (t.overlay.fadeOut(t.delay), t.widget.stop().animate({
+                    bottom: 0,
+                    opacity: 0
+                }, 2 * t.delay, function() {
+                    $(this).hide("slow"), t.button.show()
+                })) : t.button.fadeOut("medium", function() {
+                    t.widget.stop().show().animate({
+                        bottom: "30px",
+                        opacity: 1
+                    }, 2 * t.delay), t.overlay.fadeIn(t.delay)
+                })
+            })
+        });
+    </script>
+
+    <!-- End facebook page chat js-->
+
+    <script>
+        w3.includeHTML();
+    </script>
+
+    <!-- Different Types of chiller -->
+    <script>
+        function openCity(evt, cityName) {
+            var i, x, tablinks;
+            x = document.getElementsByClassName("city");
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+            tablinks = document.getElementsByClassName("tablink");
+            for (i = 0; i < x.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" w3-border-black", "");
+            }
+            document.getElementById(cityName).style.display = "block";
+            evt.currentTarget.firstElementChild.className += " w3-border-black";
+        }
+
+
+        function openUnit(evt, unitName) {
+            var i, x, tablinks;
+            x = document.getElementsByClassName("unit");
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+            tablinks = document.getElementsByClassName("tablink1");
+            for (i = 0; i < x.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" w3-border-black", "");
+            }
+            document.getElementById(unitName).style.display = "block";
+            evt.currentTarget.firstElementChild.className += " w3-border-black";
+        }
+    </script>
+
+    <!-- Add Other CAG Provided Solutions -->
+    <script>
+        function myFunction(id) {
+            var x = document.getElementById(id);
+            if (x.className.indexOf("w3-show") == -1) {
+                x.className += " w3-show";
+            } else {
+                x.className = x.className.replace(" w3-show", "");
+            }
+        }
+    </script>
+
+
+<!-- Add Google Maps -->
+<script>
+function myMap()
+{
+  myCenter=new google.maps.LatLng(16.833762, 96.169509);
+  var mapOptions= {
+    center:myCenter,
+    zoom:15, scrollwheel: false, draggable: false,
+    mapTypeId:google.maps.MapTypeId.ROADMAP
+  };
+  var map=new google.maps.Map(document.getElementById("googleMap"),mapOptions);
+
+  var marker = new google.maps.Marker({
+    position: myCenter,
+  });
+  marker.setMap(map);
+}
+</script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBuSr5a5KMyK3Y3k2iYryUhd2wf3H-aN7A&callback=myMap"></script>
+<!--
+To use this code on your website, get a free API key from Google.
+Read more at: https://www.w3schools.com/graphics/google_maps_basic.asp
+-->
+
+</body>
+</html>
